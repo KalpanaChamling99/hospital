@@ -1,0 +1,53 @@
+%text{
+    color: #bababa;
+     font-weight: 600;
+     line-height: 25px;
+     font-size: 16px;
+     word-spacing: 2px;
+}
+
+footer{
+    @extend %text;
+    background-color: #202020;      
+ 
+    .wrapper{
+        padding: 110px 0 115px 0;
+    }
+    
+    .footer{
+        
+
+        .title{
+            font-size: 30px;
+            color: $white;
+            margin-bottom: 45px;
+            text-transform: uppercase;
+        }
+        .description{
+            margin-bottom: 20px;
+        }
+        .contact{
+            margin: 10px 0 0 0;
+        }
+        .appointment-contact{
+            margin: 120px 0 10px 0;
+            padding-left: 20px;
+        }
+    }
+
+    .social-share{
+        border-top: 4px solid $gray;
+        text-align: center;
+        
+        .logo{
+            padding: 50px 0;
+            font-size:40px;
+            color: $gray;
+           
+            .icon{
+                padding-right: 40px;
+            }
+      
+        }
+    }
+}

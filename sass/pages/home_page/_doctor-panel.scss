@@ -1,0 +1,32 @@
+.doctor-panel{
+    margin: 135px 0 175px 0;
+   
+    h1{
+        margin-bottom: 130px;
+        font-size: 40px;
+        word-spacing: 4px;
+    }
+    
+    .doctor-info{
+        background-color: $light-blue;
+        margin: 0;
+        text-align: center;
+       
+        .detail{
+            padding: 10px 0;
+
+            .name{
+                font-size: 25px;
+                color: #fff;
+                font-weight: 600;
+            }
+            .department{
+                font-size: 25px;
+                color: #fff;
+                font-weight: 300;
+            }
+        }
+
+
+   }
+}

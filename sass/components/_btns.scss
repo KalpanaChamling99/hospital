@@ -1,0 +1,43 @@
+
+%common{
+    font-size: 18px;
+    width: 160px;
+    padding:10px 0; 
+    border-radius: 20px;
+    margin-right: 60px;
+    display: inline-block;
+
+    &:focus, &:visited{
+        outline: none;
+        color:inherit;
+    }
+} 
+%a{
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+.default-btn{
+    @extend %common;
+    @extend %a;
+    background-color: #fff;
+    
+
+}
+
+.primary-btn{  
+    @extend %common;  
+    @extend %a; 
+    background-color: #0078ff;
+}
+
+.btn-shadow{
+    @extend %common;
+    width: 220px;
+    padding: 20px 0;
+    border-radius:30px;
+    box-shadow: 0 0 10px rgb(143, 130, 130);
+    
+}

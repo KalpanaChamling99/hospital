@@ -1,0 +1,58 @@
+%hr{
+    height: 2px;
+    float: left;
+}
+.about-us{
+    margin: 120px 0 175px 0;
+
+    .about-us-description{
+       
+        h1{
+            font-size: 50px;    
+            word-spacing: 20px;
+            letter-spacing: 4px;
+            font-weight: 600;
+        }
+      
+        .line{
+            margin: 35px 0 65px 0;
+           
+
+            .hr1{
+                @extend %hr;
+                background-color: #00bed4;
+                width: 130px;
+            }
+
+            .hr2{
+                @extend %hr;
+                width: 335px;
+                background-color: #dedede;
+            }
+        }
+       
+        p{
+            line-height: 40px;
+            font-size: 20px;
+        }
+       
+        a{
+            text-decoration: none;
+            text-align: center;
+        }
+        .button-section{
+            margin-top: 35px;
+        }
+    
+    }
+    
+    .image{
+        margin-left: 145px;
+        background-color: #3983fe;
+            
+        .img-responsive{
+            margin-top: 250px;      
+        }
+    }
+ 
+}

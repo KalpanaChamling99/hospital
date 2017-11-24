@@ -1,0 +1,12 @@
+.img-responsive{
+    max-width: 100%;
+    vertical-align: middle;
+    height: 100%;
+
+}
+
+.clearfix::after{
+    clear: both;
+    display: block;
+    content: "";
+}
