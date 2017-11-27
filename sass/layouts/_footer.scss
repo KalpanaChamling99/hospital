@@ -4,6 +4,10 @@
      line-height: 25px;
      font-size: 16px;
      word-spacing: 2px;
+     
+     @include media(sm){
+         font-size: 12px;
+     }
 }
 
 footer{
@@ -16,23 +20,35 @@ footer{
     
     .footer{
         
-
         .title{
             font-size: 30px;
             color: $white;
             margin-bottom: 45px;
             text-transform: uppercase;
+           
+            @include media(md){
+                font-size: 20px;
+            }
+         
+            @include media(sm){
+                font-size: 15px;
+            }
+        
         }
+        
         .description{
             margin-bottom: 20px;
         }
+       
         .contact{
             margin: 10px 0 0 0;
         }
+       
         .appointment-contact{
             margin: 120px 0 10px 0;
             padding-left: 20px;
         }
+    
     }
 
     .social-share{

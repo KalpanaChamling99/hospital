@@ -4,35 +4,64 @@
     .wrapper{
         padding-top: 90px;
     }
+    
     .banner-description{
         margin:100px 0 0 0; 
         color: $white;
+        
+        @include media(sm){
+            margin: 0;
+        }
        
         h1{
             font-size: 45px;
             font-weight: 300; 
+       
         }
        
         h2{
             font-size: 60px;
             font-weight: 600;
+            @include media(md){
+                font-size: 52px;
+            }
+
+            @include media(sm){
+                font-size: 42px;
+            }
         }
         
         h3{
             font-size: 25px;
             font-weight: 300;
+            @include media(md){
+                font-size: 23px;
+            }
+            @include media(sm){
+                font-size: 17px;
+            }
         }
        
         .text{
             margin: 90px 0;
             font-size: 18px;
             font-weight: 300;
+            @include media(sm){
+                font-size: 15px;
+            }
         }
         
-        .default-btn{
-            color: #0078ff;
-
+        .button-section{
+            .default-btn{
+                color: #0078ff;
+                
+                @include media(sm){
+                margin-right: 10px;
+                }
+            }
         }
+
+        
     }
 }
 

@@ -3,7 +3,7 @@
     color: $white;
     
     .contact-form{
-        background-color: $light-blue;
+        background-color: blue;
      
         .wrapper{
             padding: 45px 40px 60px 40px;
@@ -14,10 +14,21 @@
                 
                 h1{
                     font-size: 25px;
+                    
+                    @include media(sm){
+                        font-size: 20px;
+                    }
+    
                 }
     
                 h2{
                     font-size: 15px;
+                    word-spacing: 2px;
+                  
+                    @include media(md){
+                        font-size: 12px;
+                        word-spacing: 1px;
+                    }
                 }
             }
 

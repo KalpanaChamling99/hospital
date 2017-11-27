@@ -5,6 +5,11 @@
         margin-bottom: 130px;
         font-size: 40px;
         word-spacing: 4px;
+        
+        @include media(sm){
+            font-size: 30px;
+        }
+
     }
     
     .doctor-info{
@@ -19,11 +24,21 @@
                 font-size: 25px;
                 color: #fff;
                 font-weight: 600;
+              
+                @include media(sm){
+                    font-size: 20px;
+                }
+
             }
             .department{
                 font-size: 25px;
                 color: #fff;
                 font-weight: 300;
+        
+                @include media(sm){  
+                   font-size: 20px;  
+                }
+
             }
         }
 

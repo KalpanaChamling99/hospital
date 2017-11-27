@@ -19,23 +19,25 @@
         position: relative;
         margin-top:30px;
 
+       
         .package-icon{
             position: absolute;
             margin-top: -45px;
             font-size: 30px;
             background-color: #62c6f8;
-            padding: 25px 25px 30px 30px ;
             text-align: center;
             transform: rotate(45deg);
             border-radius: 20px;
             border-bottom-right-radius: 0;
-            width:100px;
-            left: calc(50% - 50px);
+            @include package_icon( 100px );
+            
+            @include media(sm){
+                @include package_icon( 80px ); 
+            }
+    
             .icon{
                 transform: rotate(-45deg); 
-            
             }
-            
         }
         .package-description{
             padding: 110px 0 75px 0;
@@ -51,6 +53,9 @@
             ul{
                 li{
                     color: #aba5a5;
+                    @include media(md){
+                        font-size: 13px;
+                    }
                 }
             }
             .button-section{

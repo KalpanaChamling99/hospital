@@ -3,6 +3,7 @@
     padding: 100px 0;
     background-color: #f9f5f5;
 
+ 
     h1{
         color: #686767;
         font-size: 50px;
@@ -15,9 +16,14 @@
             font-size: 13px;            
             font-weight: 600;
             color: #525252;
+            
+            @include media(sm){
+                font-size: 10px;
+            }
 
             .fa-comment-o{
-                padding-left: 35px;
+                padding-left: 15px;
+              
             }
         }   
 

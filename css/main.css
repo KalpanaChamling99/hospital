@@ -1,6 +1,18 @@
 .container {
-  margin: 0 auto;
-  width: 1200px; }
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (max-width: 1199px) {
+    .container {
+      width: 970px; } }
+  @media (max-width: 991px) {
+    .container {
+      width: 750px; } }
+  @media (max-width: 767px) {
+    .container {
+      width: auto; } }
 
 .col-1 {
   float: left;
@@ -34,8 +46,7 @@
 
 .img-responsive {
   max-width: 100%;
-  vertical-align: middle;
-  height: 100%; }
+  vertical-align: middle; }
 
 .clearfix::after {
   clear: both;
@@ -61,9 +72,16 @@ body {
   background-color: #0a19ed; }
   .nav-menu .menu {
     padding-top: 60px; }
+    @media (max-width: 991px) {
+      .nav-menu .menu .left-menu img {
+        width: 100%; } }
     .nav-menu .menu .right-menu {
       text-align: right;
       font-size: 15px; }
+      @media (max-width: 991px) {
+        .nav-menu .menu .right-menu {
+          padding-left: 5px;
+          font-size: 14px; } }
       .nav-menu .menu .right-menu .menu-text {
         display: inline-block;
         letter-spacing: 1px;
@@ -74,6 +92,9 @@ body {
         color: #fff;
         font-size: 30px;
         padding-left: 10px; }
+        @media (max-width: 1199px) {
+          .nav-menu .menu .right-menu .icon {
+            font-size: 20px; } }
 
 ul li {
   list-style: none; }
@@ -88,6 +109,11 @@ ul li {
   .default-btn:focus, .primary-btn:focus, .btn-shadow:focus, .default-btn:visited, .primary-btn:visited, .btn-shadow:visited {
     outline: none;
     color: inherit; }
+  @media (max-width: 991px) {
+    .default-btn, .primary-btn, .btn-shadow {
+      width: 140px;
+      font-size: 16px;
+      padding: 8px; } }
 
 .default-btn, .primary-btn {
   text-decoration: none;
@@ -104,6 +130,10 @@ ul li {
   padding: 20px 0;
   border-radius: 30px;
   box-shadow: 0 0 10px #8f8282; }
+  @media (max-width: 991px) {
+    .btn-shadow {
+      width: 180px;
+      padding: 15px 0; } }
 
 .post {
   padding: 15px 15px 0;
@@ -128,6 +158,9 @@ ul li {
   background-color: #3373dd;
   color: #fff;
   border: none; }
+  @media (max-width: 991px) {
+    .form-control, textarea {
+      font-size: 15px; } }
 
 textarea {
   height: 225px; }
@@ -139,6 +172,11 @@ textarea {
   font-weight: 600;
   color: #2687ff;
   border-radius: 15px; }
+  @media (max-width: 991px) {
+    .button {
+      width: 150px;
+      padding: 10px  5px;
+      font-size: 14px; } }
 
 footer {
   color: #bababa;
@@ -146,6 +184,9 @@ footer {
   line-height: 25px;
   font-size: 16px;
   word-spacing: 2px; }
+  @media (max-width: 991px) {
+    footer {
+      font-size: 12px; } }
 
 footer {
   background-color: #202020; }
@@ -156,6 +197,12 @@ footer {
     color: #fff;
     margin-bottom: 45px;
     text-transform: uppercase; }
+    @media (max-width: 1199px) {
+      footer .footer .title {
+        font-size: 20px; } }
+    @media (max-width: 991px) {
+      footer .footer .title {
+        font-size: 15px; } }
   footer .footer .description {
     margin-bottom: 20px; }
   footer .footer .contact {
@@ -180,21 +227,42 @@ footer {
   .banner .banner-description {
     margin: 100px 0 0 0;
     color: #fff; }
+    @media (max-width: 991px) {
+      .banner .banner-description {
+        margin: 0; } }
     .banner .banner-description h1 {
       font-size: 45px;
       font-weight: 300; }
     .banner .banner-description h2 {
       font-size: 60px;
       font-weight: 600; }
+      @media (max-width: 1199px) {
+        .banner .banner-description h2 {
+          font-size: 52px; } }
+      @media (max-width: 991px) {
+        .banner .banner-description h2 {
+          font-size: 42px; } }
     .banner .banner-description h3 {
       font-size: 25px;
       font-weight: 300; }
+      @media (max-width: 1199px) {
+        .banner .banner-description h3 {
+          font-size: 23px; } }
+      @media (max-width: 991px) {
+        .banner .banner-description h3 {
+          font-size: 17px; } }
     .banner .banner-description .text {
       margin: 90px 0;
       font-size: 18px;
       font-weight: 300; }
-    .banner .banner-description .default-btn {
+      @media (max-width: 991px) {
+        .banner .banner-description .text {
+          font-size: 15px; } }
+    .banner .banner-description .button-section .default-btn {
       color: #0078ff; }
+      @media (max-width: 991px) {
+        .banner .banner-description .button-section .default-btn {
+          margin-right: 10px; } }
 
 .about-us .about-us-description .line .hr1, .about-us .about-us-description .line .hr2 {
   height: 2px;
@@ -218,6 +286,9 @@ footer {
   .about-us .about-us-description p {
     line-height: 40px;
     font-size: 20px; }
+    @media (max-width: 991px) {
+      .about-us .about-us-description p {
+        font-size: 15px; } }
   .about-us .about-us-description a {
     text-decoration: none;
     text-align: center; }
@@ -226,8 +297,15 @@ footer {
   .about-us .image {
     margin-left: 145px;
     background-color: #3983fe; }
+    @media (max-width: 991px) {
+      .about-us .image {
+        margin-top: 60px;
+        margin-left: 10px; } }
     .about-us .image .img-responsive {
       margin-top: 250px; }
+      @media (max-width: 1199px) {
+        .about-us .image .img-responsive {
+          margin-top: 400px; } }
 
 .quotation {
   background-color: #1664ce;
@@ -251,8 +329,14 @@ footer {
   text-align: center; }
   .theme h1 {
     font-size: 30px; }
+    @media (max-width: 991px) {
+      .theme h1 {
+        font-size: 25px; } }
   .theme h2 {
     font-size: 25px; }
+    @media (max-width: 991px) {
+      .theme h2 {
+        font-size: 20px; } }
   .theme .line {
     margin-top: 40px; }
   .theme .image {
@@ -263,6 +347,9 @@ footer {
   .theme .description {
     margin-top: 75px;
     font-size: 16px; }
+    @media (max-width: 1199px) {
+      .theme .description {
+        font-size: 14px; } }
 
 .page-sample {
   background-color: #0a19ed;
@@ -273,13 +360,25 @@ footer {
     padding-bottom: 120px; }
   .page-sample .page-sample-description {
     margin: 100px 50px 0 0; }
+    @media (max-width: 991px) {
+      .page-sample .page-sample-description {
+        margin: 30px 0 0 0; } }
     .page-sample .page-sample-description .description {
       font-size: 20px;
       font-weight: 600; }
+      @media (max-width: 1199px) {
+        .page-sample .page-sample-description .description {
+          font-size: 18px; } }
     .page-sample .page-sample-description .button-section {
       margin: 35px 0 0 20px; }
+      @media (max-width: 991px) {
+        .page-sample .page-sample-description .button-section {
+          margin: 35px 0; } }
       .page-sample .page-sample-description .button-section .default-btn {
         color: #0078ff; }
+        @media (max-width: 1199px) {
+          .page-sample .page-sample-description .button-section .default-btn {
+            margin-right: 15px; } }
 
 .doctor-panel {
   margin: 135px 0 175px 0; }
@@ -287,6 +386,9 @@ footer {
     margin-bottom: 130px;
     font-size: 40px;
     word-spacing: 4px; }
+    @media (max-width: 991px) {
+      .doctor-panel h1 {
+        font-size: 30px; } }
   .doctor-panel .doctor-info {
     background-color: #1664ce;
     margin: 0;
@@ -297,10 +399,16 @@ footer {
         font-size: 25px;
         color: #fff;
         font-weight: 600; }
+        @media (max-width: 991px) {
+          .doctor-panel .doctor-info .detail .name {
+            font-size: 20px; } }
       .doctor-panel .doctor-info .detail .department {
         font-size: 25px;
         color: #fff;
         font-weight: 300; }
+        @media (max-width: 991px) {
+          .doctor-panel .doctor-info .detail .department {
+            font-size: 20px; } }
 
 .package {
   background-color: #1664ce;
@@ -321,13 +429,20 @@ footer {
       margin-top: -45px;
       font-size: 30px;
       background-color: #62c6f8;
-      padding: 25px 25px 30px 30px;
       text-align: center;
       transform: rotate(45deg);
       border-radius: 20px;
       border-bottom-right-radius: 0;
+      height: 100px;
       width: 100px;
+      line-height: 100px;
       left: calc(50% - 50px); }
+      @media (max-width: 991px) {
+        .package .package-info .package-icon {
+          height: 80px;
+          width: 80px;
+          line-height: 80px;
+          left: calc(50% - 40px); } }
       .package .package-info .package-icon .icon {
         transform: rotate(-45deg); }
     .package .package-info .package-description {
@@ -340,6 +455,9 @@ footer {
         margin-bottom: 60px; }
       .package .package-info .package-description ul li {
         color: #aba5a5; }
+        @media (max-width: 1199px) {
+          .package .package-info .package-description ul li {
+            font-size: 13px; } }
       .package .package-info .package-description .button-section {
         margin: 50px 0 0 40px; }
 
@@ -357,14 +475,17 @@ footer {
     font-size: 13px;
     font-weight: 600;
     color: #525252; }
+    @media (max-width: 991px) {
+      .latest-posts .description .comment {
+        font-size: 10px; } }
     .latest-posts .description .comment .fa-comment-o {
-      padding-left: 35px; }
+      padding-left: 15px; }
 
 .contact-us {
   margin-bottom: 60px;
   color: #fff; }
   .contact-us .contact-form {
-    background-color: #1664ce; }
+    background-color: blue; }
     .contact-us .contact-form .wrapper {
       padding: 45px 40px 60px 40px; }
       .contact-us .contact-form .wrapper .title {
@@ -372,8 +493,16 @@ footer {
         margin-bottom: 60px; }
         .contact-us .contact-form .wrapper .title h1 {
           font-size: 25px; }
+          @media (max-width: 991px) {
+            .contact-us .contact-form .wrapper .title h1 {
+              font-size: 20px; } }
         .contact-us .contact-form .wrapper .title h2 {
-          font-size: 15px; }
+          font-size: 15px;
+          word-spacing: 2px; }
+          @media (max-width: 1199px) {
+            .contact-us .contact-form .wrapper .title h2 {
+              font-size: 12px;
+              word-spacing: 1px; } }
       .contact-us .contact-form .wrapper .form-group {
         margin-bottom: 10px; }
       .contact-us .contact-form .wrapper .form-group-button {

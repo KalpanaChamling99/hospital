@@ -34,6 +34,10 @@
         p{
             line-height: 40px;
             font-size: 20px;
+            @include media(sm){
+                font-size:15px;
+            }
+
         }
        
         a{
@@ -49,9 +53,17 @@
     .image{
         margin-left: 145px;
         background-color: #3983fe;
+        @include media(sm){
+            margin-top: 60px;
+            margin-left: 10px
+        }
             
         .img-responsive{
-            margin-top: 250px;      
+            margin-top: 250px;     
+
+            @include media(md){
+                margin-top: 400px;
+            }    
         }
     }
  

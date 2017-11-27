@@ -6,6 +6,10 @@
     background-color: #3373dd;
     color: #fff;
     border: none;
+
+    @include media(sm){
+       font-size: 15px;
+    }
 }
 
 .form-control{
@@ -22,8 +26,14 @@ textarea{
     padding: 10px;
     font-size: 17px;
     font-weight: 600;
-   
     color: #2687ff;
+
     border-radius: 15px;
+
+      @include media(sm){
+             width: 150px;
+             padding: 10px  5px;
+             font-size: 14px;
+      }
 
 }
