@@ -1,8 +1,14 @@
 .banner{
-    background-color: $blue;
+    background-color: $blue; 
 
     .wrapper{
         padding-top: 90px;
+    }
+
+    .image{
+        .img-responsive{
+            margin-top: 100px;
+        }
     }
     
     .banner-description{
@@ -16,6 +22,9 @@
         h1{
             font-size: 45px;
             font-weight: 300; 
+            @include media(xs){
+                font-size: 20px;
+            }
        
         }
        
@@ -28,6 +37,9 @@
 
             @include media(sm){
                 font-size: 42px;
+            }
+            @include media(xs){
+                font-size: 30px;
             }
         }
         
@@ -46,6 +58,7 @@
             margin: 90px 0;
             font-size: 18px;
             font-weight: 300;
+          
             @include media(sm){
                 font-size: 15px;
             }
@@ -60,6 +73,7 @@
                 }
             }
         }
+
 
         
     }

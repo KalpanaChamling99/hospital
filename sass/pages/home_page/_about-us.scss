@@ -12,6 +12,12 @@
             word-spacing: 20px;
             letter-spacing: 4px;
             font-weight: 600;
+
+            @include media(sm){
+                font-size: 40px;
+                word-spacing: 2px;
+                letter-spacing: 2px;
+            }
         }
       
         .line{
@@ -22,12 +28,19 @@
                 @extend %hr;
                 background-color: #00bed4;
                 width: 130px;
+
+                @include media(xs){
+                    width: 50px;
+                }
             }
 
             .hr2{
                 @extend %hr;
                 width: 335px;
                 background-color: #dedede;
+                @include media(xs){
+                    width: 150px;
+                }
             }
         }
        
@@ -63,7 +76,12 @@
 
             @include media(md){
                 margin-top: 400px;
+            }  
+            @include media(xs){
+                margin-top: 200px;
             }    
+             
+
         }
     }
  

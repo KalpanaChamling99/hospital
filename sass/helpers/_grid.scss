@@ -9,6 +9,7 @@ $container-lg: 1200px;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
+  
 
     // @include container-fixed;
 
@@ -22,6 +23,7 @@ $container-lg: 1200px;
 
     @include media(xs){
         width: auto;
+       
     }
 
 
@@ -31,30 +33,58 @@ $container-lg: 1200px;
 
 .col-1{
     float: left;
-    width: 10%;
+    width: 8.33%;
+
+    @include media(xs){
+        width: 50%;
+    }
 }
-.col-11{
+.col-10{
     float: left;
-    width: 90%;
+    width: 83.33%;
+    @include media(xs){
+        width: 100%;
+    }
 }
 .col-half{
     float: left;
     width: 50%;
+
+    @include media(xs){
+        width: 100%;
+        padding: 0;
+        margin-bottom: 30px;
+    }
   
 }
+
+
 .col-3{
     float: left;
     width: 33.33%;
     padding: 0 15px;
+     @include media(xs){
+        width: 100%;
+        padding: 0;
+        margin-bottom: 50px;
+    }
 }
 .col-4{
     float: left;
     width: 25%;
     padding: 0 15px;
+     @include media(xs){
+        width: 100%;
+        padding: 0;
+    }
 }
 
 .row{
     margin: 0 -15px;
     @include clearfix();
+
+    // @include media(xs){
+        margin: 0;
+    // }
 }
 

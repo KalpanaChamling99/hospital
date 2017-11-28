@@ -6,6 +6,11 @@
         padding: 200px 0;
         font-size: 30px;
         color: #fff;
-       
+
+        @include media(xs){
+            font-size: 15px;
+            padding: 100px 0;
+        }
+
     }
 }

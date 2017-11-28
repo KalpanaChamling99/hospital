@@ -6,6 +6,7 @@
     border-radius: 20px;
     margin-right: 60px;
     display: inline-block;
+    transition: all 0.5s;
 
     &:focus, &:visited{
         outline: none;
@@ -15,6 +16,18 @@
         width: 140px;
         font-size: 16px;
         padding: 8px;
+    }
+
+    @include media(xs){
+        width: 100px;
+        font-size: 10px;
+        padding: 6px;
+    }
+    
+
+    a:hover{
+        // cursor: pointer;
+        background-color: red;
     }
 } 
 %a{
@@ -48,6 +61,11 @@
     @include media(sm){
         width: 180px;
         padding: 15px 0; 
+    }
+
+    @include media(xs){
+        width: 140px;
+        padding: 10px 0; 
     }
     
 }

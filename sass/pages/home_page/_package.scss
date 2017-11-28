@@ -11,6 +11,10 @@
         margin-bottom: 85px;
         h1{
             font-size: 40px;
+
+            @include media(sm){
+                font-size: 30px;
+            }
         }
     
     }
@@ -33,6 +37,7 @@
             
             @include media(sm){
                 @include package_icon( 80px ); 
+                font-size: 20px;
             }
     
             .icon{
@@ -48,6 +53,10 @@
                 word-spacing: 10px;
                 font-weight: 600;
                 margin-bottom: 60px;
+
+                @include media(sm){
+                    font-size: 20px;
+                }
                 
             }
             ul{

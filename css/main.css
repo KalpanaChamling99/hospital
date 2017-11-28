@@ -16,28 +16,49 @@
 
 .col-1 {
   float: left;
-  width: 10%; }
+  width: 8.33%; }
+  @media (max-width: 767px) {
+    .col-1 {
+      width: 50%; } }
 
-.col-11 {
+.col-10 {
   float: left;
-  width: 90%; }
+  width: 83.33%; }
+  @media (max-width: 767px) {
+    .col-10 {
+      width: 100%; } }
 
 .col-half {
   float: left;
   width: 50%; }
+  @media (max-width: 767px) {
+    .col-half {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 30px; } }
 
 .col-3 {
   float: left;
   width: 33.33%;
   padding: 0 15px; }
+  @media (max-width: 767px) {
+    .col-3 {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 50px; } }
 
 .col-4 {
   float: left;
   width: 25%;
   padding: 0 15px; }
+  @media (max-width: 767px) {
+    .col-4 {
+      width: 100%;
+      padding: 0; } }
 
 .row {
-  margin: 0 -15px; }
+  margin: 0 -15px;
+  margin: 0; }
   .row:before, .row:after {
     content: " ";
     display: table; }
@@ -72,29 +93,29 @@ body {
   background-color: #0a19ed; }
   .nav-menu .menu {
     padding-top: 60px; }
-    @media (max-width: 991px) {
-      .nav-menu .menu .left-menu img {
-        width: 100%; } }
+    @media (max-width: 767px) {
+      .nav-menu .menu {
+        padding-top: 30px; } }
     .nav-menu .menu .right-menu {
-      text-align: right;
-      font-size: 15px; }
+      font-size: 15px;
+      text-align: right; }
       @media (max-width: 991px) {
         .nav-menu .menu .right-menu {
-          padding-left: 5px;
           font-size: 14px; } }
+      @media (max-width: 767px) {
+        .nav-menu .menu .right-menu {
+          display: none;
+          text-align: center; } }
       .nav-menu .menu .right-menu .menu-text {
         display: inline-block;
         letter-spacing: 1px;
         padding: 10px 10px;
         font-weight: 600;
         color: #fff; }
-      .nav-menu .menu .right-menu .icon {
-        color: #fff;
-        font-size: 30px;
-        padding-left: 10px; }
-        @media (max-width: 1199px) {
-          .nav-menu .menu .right-menu .icon {
-            font-size: 20px; } }
+        @media (max-width: 767px) {
+          .nav-menu .menu .right-menu .menu-text {
+            font-size: 10px;
+            display: block; } }
 
 ul li {
   list-style: none; }
@@ -105,7 +126,8 @@ ul li {
   padding: 10px 0;
   border-radius: 20px;
   margin-right: 60px;
-  display: inline-block; }
+  display: inline-block;
+  transition: all 0.5s; }
   .default-btn:focus, .primary-btn:focus, .btn-shadow:focus, .default-btn:visited, .primary-btn:visited, .btn-shadow:visited {
     outline: none;
     color: inherit; }
@@ -114,6 +136,13 @@ ul li {
       width: 140px;
       font-size: 16px;
       padding: 8px; } }
+  @media (max-width: 767px) {
+    .default-btn, .primary-btn, .btn-shadow {
+      width: 100px;
+      font-size: 10px;
+      padding: 6px; } }
+  .default-btn a:hover, .primary-btn a:hover, .btn-shadow a:hover {
+    background-color: red; }
 
 .default-btn, .primary-btn {
   text-decoration: none;
@@ -134,6 +163,28 @@ ul li {
     .btn-shadow {
       width: 180px;
       padding: 15px 0; } }
+  @media (max-width: 767px) {
+    .btn-shadow {
+      width: 140px;
+      padding: 10px 0; } }
+
+.icon {
+  color: #fff;
+  font-size: 30px;
+  padding-left: 10px; }
+  @media (max-width: 1199px) {
+    .icon {
+      font-size: 20px; } }
+  @media (max-width: 767px) {
+    .icon {
+      font-size: 25px; } }
+  .icon .search {
+    padding: 0 10px; }
+  .icon .bars {
+    display: none; }
+    @media (max-width: 767px) {
+      .icon .bars {
+        display: inline; } }
 
 .post {
   padding: 15px 15px 0;
@@ -224,6 +275,8 @@ footer {
   background-color: #0a19ed; }
   .banner .wrapper {
     padding-top: 90px; }
+  .banner .image .img-responsive {
+    margin-top: 100px; }
   .banner .banner-description {
     margin: 100px 0 0 0;
     color: #fff; }
@@ -233,6 +286,9 @@ footer {
     .banner .banner-description h1 {
       font-size: 45px;
       font-weight: 300; }
+      @media (max-width: 767px) {
+        .banner .banner-description h1 {
+          font-size: 20px; } }
     .banner .banner-description h2 {
       font-size: 60px;
       font-weight: 600; }
@@ -242,6 +298,9 @@ footer {
       @media (max-width: 991px) {
         .banner .banner-description h2 {
           font-size: 42px; } }
+      @media (max-width: 767px) {
+        .banner .banner-description h2 {
+          font-size: 30px; } }
     .banner .banner-description h3 {
       font-size: 25px;
       font-weight: 300; }
@@ -275,14 +334,25 @@ footer {
     word-spacing: 20px;
     letter-spacing: 4px;
     font-weight: 600; }
+    @media (max-width: 991px) {
+      .about-us .about-us-description h1 {
+        font-size: 40px;
+        word-spacing: 2px;
+        letter-spacing: 2px; } }
   .about-us .about-us-description .line {
     margin: 35px 0 65px 0; }
     .about-us .about-us-description .line .hr1 {
       background-color: #00bed4;
       width: 130px; }
+      @media (max-width: 767px) {
+        .about-us .about-us-description .line .hr1 {
+          width: 50px; } }
     .about-us .about-us-description .line .hr2 {
       width: 335px;
       background-color: #dedede; }
+      @media (max-width: 767px) {
+        .about-us .about-us-description .line .hr2 {
+          width: 150px; } }
   .about-us .about-us-description p {
     line-height: 40px;
     font-size: 20px; }
@@ -306,6 +376,9 @@ footer {
       @media (max-width: 1199px) {
         .about-us .image .img-responsive {
           margin-top: 400px; } }
+      @media (max-width: 767px) {
+        .about-us .image .img-responsive {
+          margin-top: 200px; } }
 
 .quotation {
   background-color: #1664ce;
@@ -314,6 +387,10 @@ footer {
     padding: 200px 0;
     font-size: 30px;
     color: #fff; }
+    @media (max-width: 767px) {
+      .quotation .quote {
+        font-size: 15px;
+        padding: 100px 0; } }
 
 .theme h1, .theme h2 {
   word-spacing: 10px;
@@ -381,7 +458,8 @@ footer {
             margin-right: 15px; } }
 
 .doctor-panel {
-  margin: 135px 0 175px 0; }
+  margin: 135px 0 175px 0;
+  text-align: center; }
   .doctor-panel h1 {
     margin-bottom: 130px;
     font-size: 40px;
@@ -391,10 +469,12 @@ footer {
         font-size: 30px; } }
   .doctor-panel .doctor-info {
     background-color: #1664ce;
-    margin: 0;
-    text-align: center; }
+    margin: 0; }
     .doctor-panel .doctor-info .detail {
       padding: 10px 0; }
+      @media (max-width: 767px) {
+        .doctor-panel .doctor-info .detail {
+          padding: 0; } }
       .doctor-panel .doctor-info .detail .name {
         font-size: 25px;
         color: #fff;
@@ -420,6 +500,9 @@ footer {
     margin-bottom: 85px; }
     .package .title h1 {
       font-size: 40px; }
+      @media (max-width: 991px) {
+        .package .title h1 {
+          font-size: 30px; } }
   .package .package-info {
     background-color: #fff;
     position: relative;
@@ -442,7 +525,8 @@ footer {
           height: 80px;
           width: 80px;
           line-height: 80px;
-          left: calc(50% - 40px); } }
+          left: calc(50% - 40px);
+          font-size: 20px; } }
       .package .package-info .package-icon .icon {
         transform: rotate(-45deg); }
     .package .package-info .package-description {
@@ -453,6 +537,9 @@ footer {
         word-spacing: 10px;
         font-weight: 600;
         margin-bottom: 60px; }
+        @media (max-width: 991px) {
+          .package .package-info .package-description h1 {
+            font-size: 20px; } }
       .package .package-info .package-description ul li {
         color: #aba5a5; }
         @media (max-width: 1199px) {
@@ -471,6 +558,12 @@ footer {
     word-spacing: 20px;
     font-weight: 600;
     margin-bottom: 30px; }
+    @media (max-width: 991px) {
+      .latest-posts h1 {
+        font-size: 35px; } }
+    @media (max-width: 767px) {
+      .latest-posts h1 {
+        font-size: 25px; } }
   .latest-posts .description .comment {
     font-size: 13px;
     font-weight: 600;
@@ -478,8 +571,8 @@ footer {
     @media (max-width: 991px) {
       .latest-posts .description .comment {
         font-size: 10px; } }
-    .latest-posts .description .comment .fa-comment-o {
-      padding-left: 15px; }
+    .latest-posts .description .comment .col-half {
+      width: 100%; }
 
 .contact-us {
   margin-bottom: 60px;

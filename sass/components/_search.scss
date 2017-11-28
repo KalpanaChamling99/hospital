@@ -1,0 +1,26 @@
+.icon{
+    color: #fff;
+    font-size: 30px;   
+    padding-left: 10px;
+    
+    @include media(md){
+        font-size: 20px;		
+    }
+    
+    @include media(xs){
+        font-size: 25px;    
+    }
+
+    .search{
+        padding: 0 10px;
+    }
+   
+    .bars{
+        
+        display: none;
+        @include media(xs){
+            display: inline;
+           
+        }
+    }
+}
