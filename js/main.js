@@ -3,8 +3,11 @@ function ui(){
 
     this.init = function(){
         this.menuToggler(); 
+        this.search();
     };
-
+    
+    //-----------menu----------------//
+   
     this.menuToggler = function(){
         var $bar = $('.bars');
         if( $bar.length > 0 ){
@@ -13,7 +16,27 @@ function ui(){
             });
         }
     };
+  //-----------/menu----------------//
 
+    //-----------Search----------------//
+    
+    this.search = function(){
+        console.log('hi');
+        var $search =$('.search-n-menu-icon');
+        if($search.length > 0){
+            $('.search').on('click',function(){
+               
+                $('#search').toggle(1000);
+                $('.right-menu').toggle(1000);
+                $('.search').toggleClass('fa-close');
+            
+            });
+        }
+    };
+    
+
+
+      //-----------/Search----------------//
     this.check = function(){
         alert('window is loaded');
     };

@@ -5,50 +5,65 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" type="text/css" href="css/main.css"/>  
+	<link rel="stylesheet" type="text/css" href="css/dropdown.css"/>
 	<link rel="stylesheet" type="text/css" href="css/font.css"/>
 </head>
 <body>
 	
 	<!-- Navigation menu -->
-	<div class="nav-menu">
+	<header class="nav">
 		<div class="container">
-			
-			<div class="menu  clearfix">
+			<div class="wrapper  clearfix">
 			
 				<div class="col-1">
-					<div class="left-menu">
+					<div class="logo">
 						<img src="images/logo1.png" class="img-responsive"/>
 					</div>
 				</div>
-			
-				<div class="col-1">
-					<div class="icon">
-						<i class="fa fa-search search"></i>
-						<i class="fa fa-bars bars"></i>
-					</div>
-				</div>	
-		
-				<div class="col-10">
-					<div class="right-menu">
-						<a class="menu-text">Home</a>
-						<a class="menu-text">About us</a>
-						<a class="menu-text">Service</a>
-						<a class="menu-text">Department</a>
-						<a class="menu-text">Doctor</a>
-						<a class="menu-text">Blog</a>
-						<a class="menu-text">Contact</a>
-					</div>	
 					
-					
-					<!-- /.right-menu -->
+				<div class="col-11"> 
+					<div class="nav-menu">
 
-				</div><!--/.col-10  -->
-				
-				
+						<nav class="right-menu">
+							<ul class="menu">
+								<li><a class="menu-text">Home</a></li>
+								
+								<li><a class="menu-text">About us</a>
+									<ul>
+										<li><a>Apple</a>
+											<ul>
+												<li><a>Banana</a></li>
+											</ul>		
+										</li>
+									</ul>	
+								</li>
+								
+								<li><a class="menu-text">Service</a></li>
+								<li><a class="menu-text">Department</a></li>
+								<li><a class="menu-text">Doctor</a></li>
+								<li><a class="menu-text">Blog</a></li>
+								<li><a class="menu-text">Contact</a></li>
+							</ul>
+						</nav><!-- /.right-menu -->
+					
+						<div class="search-n-menu-icon">
+							<form id="search">
+								<input type="search" name="search" class="form-control"/>
+							</form>	
+
+							<div class="icons">
+								<i class="fa fa-search search"></i>
+								<i class="fa fa-bars bars"></i>
+							</div>
+						</div>
+
+					</div><!--/.nav-menu-->	
+				</div><!--/.col-8  -->
+								
+
 			</div><!--/.menu  -->
-		
 		</div><!--/.container  -->
-	</div>	<!--/.nav-menu  -->
+	</header>	<!--/.nav-menu  -->
 	<!--  /navigation Menu -->
 		
 	
@@ -89,8 +104,6 @@
 			</div> <!-- /.banner-content -->
 		</div> <!-- /.container -->
 	</div> <!--/.banner  -->	
-			
-	<!-- /Banner -->
 	
 	
 	<!--About us  -->
@@ -717,6 +730,7 @@
 
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/dropdown.js"></script>
 
 </body>
 </html>

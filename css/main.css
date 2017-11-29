@@ -19,13 +19,13 @@
   width: 8.33%; }
   @media (max-width: 767px) {
     .col-1 {
-      width: 50%; } }
+      width: 100%; } }
 
-.col-10 {
+.col-2 {
   float: left;
-  width: 83.33%; }
+  width: 16.67%; }
   @media (max-width: 767px) {
-    .col-10 {
+    .col-2 {
       width: 100%; } }
 
 .col-half {
@@ -56,6 +56,27 @@
       width: 100%;
       padding: 0; } }
 
+.col-8 {
+  float: left;
+  width: 66.67%; }
+  @media (max-width: 767px) {
+    .col-8 {
+      width: 100%; } }
+
+.col-9 {
+  float: left;
+  width: 75%; }
+  @media (max-width: 767px) {
+    .col-9 {
+      width: 100%; } }
+
+.col-11 {
+  float: left;
+  width: 91.67%; }
+  @media (max-width: 767px) {
+    .col-11 {
+      width: 100%; } }
+
 .row {
   margin: 0 -15px;
   margin: 0; }
@@ -84,41 +105,44 @@
 body {
   font-family: "Poppins"; }
 
-.nav-menu {
-  /* position: fixed; */
-  z-index: 1;
-  top: 0;
-  width: 100%;
-  margin: 0;
+.nav {
   background-color: #0a19ed; }
-  .nav-menu .menu {
+  .nav .wrapper {
     padding-top: 60px; }
     @media (max-width: 767px) {
-      .nav-menu .menu {
+      .nav .wrapper {
         padding-top: 30px; } }
-    .nav-menu .menu .right-menu {
+  .nav .nav-menu {
+    float: right; }
+    .nav .nav-menu:before, .nav .nav-menu:after {
+      content: " ";
+      display: table; }
+    .nav .nav-menu:after {
+      clear: both; }
+    @media (max-width: 767px) {
+      .nav .nav-menu {
+        float: left; } }
+    .nav .nav-menu .right-menu {
       font-size: 15px;
-      text-align: right; }
+      text-align: right;
+      float: left; }
       @media (max-width: 991px) {
-        .nav-menu .menu .right-menu {
+        .nav .nav-menu .right-menu {
           font-size: 14px; } }
       @media (max-width: 767px) {
-        .nav-menu .menu .right-menu {
+        .nav .nav-menu .right-menu {
           display: none;
-          text-align: center; } }
-      .nav-menu .menu .right-menu .menu-text {
-        display: inline-block;
+          text-align: center;
+          width: 100%; } }
+      .nav .nav-menu .right-menu a {
         letter-spacing: 1px;
         padding: 10px 10px;
         font-weight: 600;
         color: #fff; }
         @media (max-width: 767px) {
-          .nav-menu .menu .right-menu .menu-text {
+          .nav .nav-menu .right-menu a {
             font-size: 10px;
             display: block; } }
-
-ul li {
-  list-style: none; }
 
 .default-btn, .primary-btn, .btn-shadow {
   font-size: 18px;
@@ -168,23 +192,23 @@ ul li {
       width: 140px;
       padding: 10px 0; } }
 
-.icon {
-  color: #fff;
-  font-size: 30px;
-  padding-left: 10px; }
-  @media (max-width: 1199px) {
-    .icon {
-      font-size: 20px; } }
-  @media (max-width: 767px) {
-    .icon {
-      font-size: 25px; } }
-  .icon .search {
-    padding: 0 10px; }
-  .icon .bars {
+.search-n-menu-icon {
+  margin-left: 10px;
+  float: left; }
+  .search-n-menu-icon #search, .search-n-menu-icon .icons {
+    float: left; }
+  .search-n-menu-icon #search {
     display: none; }
-    @media (max-width: 767px) {
-      .icon .bars {
-        display: inline; } }
+    .search-n-menu-icon #search .form-control {
+      padding: 5px 10px; }
+  .search-n-menu-icon .icons {
+    margin-left: 10px;
+    color: #fff; }
+    .search-n-menu-icon .icons .bars {
+      display: none; }
+      @media (max-width: 767px) {
+        .search-n-menu-icon .icons .bars {
+          display: inline; } }
 
 .post {
   padding: 15px 15px 0;

@@ -1,24 +1,29 @@
 
-.nav-menu{
-	/* position: fixed; */
-	z-index: 1;
-	top: 0;
-	width: 100%;
-  	margin: 0;
+.nav{
 	background-color: $blue;
 
-	
-	
-	.menu{
+
+	.wrapper{
 		padding-top: 60px;
 
 		@include media(xs){
 			padding-top: 30px;
 		}
 
+	}	
+
+	.nav-menu{
+		float: right;
+		@include clearfix();
+	
+		@include media(xs){
+			float: left;
+		}
+
 		.right-menu{
 			font-size: 15px;
 			text-align: right;
+			float: left;
 			
 			@include media(sm){
 				font-size: 14px;
@@ -27,30 +32,30 @@
 			@include media(xs){
 				display: none;
 				text-align: center;
-				
+				width: 100%;	
 			}
 
-		
-			.menu-text{
-				display: inline-block;
+			a{
+				// display:block;
 				letter-spacing: 1px;
 				padding: 10px 10px;
 				font-weight: 600;
 				color: #fff;
+			
 				@include media(xs){
 					font-size: 10px;
 					display: block;
 					
 				}
-			
-							
 			}
-			
 			
 		}
 		
 	}
+	
+	
 }
+
 
 
 

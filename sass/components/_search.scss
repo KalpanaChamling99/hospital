@@ -1,26 +1,30 @@
-.icon{
-    color: #fff;
-    font-size: 30px;   
-    padding-left: 10px;
-    
-    @include media(md){
-        font-size: 20px;		
-    }
-    
-    @include media(xs){
-        font-size: 25px;    
-    }
 
-    .search{
-        padding: 0 10px;
+.search-n-menu-icon{
+    margin-left: 10px;
+    float: left;
+    // margin-top: 10px;
+
+    #search, .icons{
+        float:left;
     }
-   
-    .bars{
-        
+    #search{
         display: none;
-        @include media(xs){
-            display: inline;
-           
+
+        .form-control{
+            padding: 5px 10px;
+        }
+    }
+    
+
+    .icons{
+        margin-left: 10px;
+        color: $white;
+
+        .bars{
+            display: none;
+            @include media(xs){
+				display: inline;			
+			}
         }
     }
 }
