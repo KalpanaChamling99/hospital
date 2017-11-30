@@ -29,7 +29,8 @@
                         totalOffset = $(this).children('ul').offset().left + eleWidth;
                         // console.log("windowWidth", self.windowWidth, "offset"+$(this).offset().left, 'eleWidth', eleWidth, 'totalOffset', totalOffset );
                         if( totalOffset > self.windowWidth ){
-                            $(this).children('ul').css({"right":"100%","left":"initial", "z-index": counter });
+                            $(this).children('ul').css({"right":"100%","left":"initial","z-index": counter });
+                        
                         }
                         counter++;
                     }
@@ -37,7 +38,7 @@
                 }, function( e ){
                     e.stopPropagation();
                     $(this).children('ul').removeAttr('style');
-                    console.log('hover out');
+                    // console.log('hover out');
                 });
             };
         };

@@ -2,10 +2,9 @@
 //     li{
 //         list-style: none;
 //         display: inline;
+
+//         @include media(xs){
+//             display: block;
+//         }
 //     }
 // }
-
-// a:hover{
-//     cursor: pointer;
-// }
-      

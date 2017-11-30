@@ -12,11 +12,11 @@ ul li a{
 	color: #fff;
 	font-size: 18px;
 	padding: 15px;
-	display: block;
+	/* display: block; */
 }
+
 /*parent*/
 ul.menu ul{
-	/*visibility: hidden;*/
 	display: none;
 	transform: translateY(20px);
 	opacity: 0;
