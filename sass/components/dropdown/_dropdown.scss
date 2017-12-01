@@ -2,13 +2,10 @@
 /*child*/
 /*grand child*/
 
-@keyframes example {
-    0%   {right:-100%; top:0;}
-    // 25%  {left:20px; top:0px;}
-    // 50%  {left:20px; top:200px;}
-    // 75%  {left:20px; top:200px;}
-    100% {left:0; top:0px;}
-}
+// @keyframes example {
+//     0%   {right:-100%; top:0;}
+//     100% {left:0; top:0px;}
+// }
 
 $drop-down-menu-bg-color :#1BC2A2;
 $child-li-bg-color: #030d99;
@@ -42,7 +39,7 @@ li{
 	ul{
 		li{
 			a{
-				font-size: $child-font-size;
+				font-size: $child-font-size;	
 			}
 		}
 	}
@@ -118,24 +115,24 @@ li{
 }
 
 @media( max-width: 767px ){
+	
+
 	.nav{
 		.container{
 			padding: 0;
 		}
 		.nav-menu{
 			width: 100%;
-	
 		}
 
 	}
-	
-	li{
-		border-bottom: solid 1px $border-color;
-	}
-	
-	
 
-	
+	// ----------------list-style-------------------//
+	li{
+		a{
+			border-bottom: solid 1px $border-color;
+		}
+	}
 	
 	ul#{$ul-class-name} { 
 		ul {
@@ -145,16 +142,7 @@ li{
 			width: 100%;
 			transition: all 0.1s linear;
 		}
-		li {
-			ul {
-				background-color: $child-li-bg-color ;
-				li {
-					ul {
-						background-color: $child-li-bg-color;
-					}
-				}
-			}
-		}
+		
 		>li#{$li-class-name}{
 			>a {
 				&:after {

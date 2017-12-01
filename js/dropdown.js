@@ -23,6 +23,7 @@
                 
                 $(this.selector+'.has-sub').hover( function(e){
                     e.stopPropagation();
+                    // $(this).children('ul').slideToggle();
                     var eleWidth = $(' > ul', this).outerWidth();
                     if( $(this).children('ul').length > 0 ){
     
@@ -30,7 +31,7 @@
                         // console.log("windowWidth", self.windowWidth, "offset"+$(this).offset().left, 'eleWidth', eleWidth, 'totalOffset', totalOffset );
                         if( totalOffset > self.windowWidth ){
                             $(this).children('ul').css({"right":"100%","left":"initial","z-index": counter });
-                        
+                           
                         }
                         counter++;
                     }

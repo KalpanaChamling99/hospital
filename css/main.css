@@ -147,13 +147,6 @@ body {
 /*parent*/
 /*child*/
 /*grand child*/
-@keyframes example {
-  0% {
-    right: -100%;
-    top: 0; }
-  100% {
-    left: 0;
-    top: 0px; } }
 ul {
   list-style: none;
   padding: 0; }
@@ -212,7 +205,7 @@ li ul li a {
   .nav .nav-menu {
     width: 100%; }
 
-  li {
+  li a {
     border-bottom: solid 1px #0310ba; }
 
   ul.menu ul {
@@ -221,10 +214,6 @@ li ul li a {
     opacity: 0;
     width: 100%;
     transition: all 0.1s linear; }
-  ul.menu li ul {
-    background-color: #030d99; }
-    ul.menu li ul li ul {
-      background-color: #030d99; }
   ul.menu > li.has-sub > a:after {
     content: "\f107";
     font: normal normal normal 14px/1 FontAwesome;
