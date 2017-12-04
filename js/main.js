@@ -2,26 +2,22 @@
 function ui(){
 
     this.init = function(){
-        this.menuToggler(); 
+        this.menuToggler();
         this.search();
     };
-    
-    //-----------menu----------------//
-   
     this.menuToggler = function(){
         var $bar = $('.bars');
         if( $bar.length > 0 ){
             $bar.on('click',function(){
                 $('.right-menu').slideToggle();
+               $(this).toggleClass('fa-bars');
+               $(this).toggleClass('fa-close');
             });
         }
     };
-  //-----------/menu----------------//
-
-    //-----------Search----------------//
+    // -----------Search----------------//
     
     this.search = function(){
-        console.log('hi');
         var $search =$('.search-n-menu-icon');
         if($search.length > 0){
             $('.search').on('click',function(){

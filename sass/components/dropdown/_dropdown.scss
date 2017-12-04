@@ -1,11 +1,3 @@
-/*parent*/
-/*child*/
-/*grand child*/
-
-// @keyframes example {
-//     0%   {right:-100%; top:0;}
-//     100% {left:0; top:0px;}
-// }
 
 $drop-down-menu-bg-color :#1BC2A2;
 $child-li-bg-color: #030d99;
@@ -17,36 +9,39 @@ $width: 125px;
 $parent-font-size: 18px;
 $child-font-size: 15px;
 
-ul {
-	list-style: none;
-	padding: 0;
-	li {
-		a {
-            display: block;
-			text-decoration: none;
-			color: #fff;
-			font-size: $parent-font-size;
-			padding: 15px;
-		}
-	}
-}
-a {
-	&:hover {
-		background-color: $hover-color;
-	}
-}
-li{
-	ul{
-		li{
-			a{
-				font-size: $child-font-size;	
+	ul {
+		list-style: none;
+		padding: 0;
+		li {
+			a {
+				display: block;
+				text-decoration: none;
+				color: #fff;
+				font-size: $parent-font-size;
+				padding: 15px;
 			}
 		}
 	}
-}
+	a {
+		&:hover {
+			background-color: $hover-color;
+		}
+	}
+	li{
+		ul{
+			li{
+				a{
+					font-size: $child-font-size;	
+				}
+			}
+		}
+	}
+
 
 @media( min-width: 768px ){
-	
+	.mobile{
+		display: none;
+	}
 	ul#{$ul-class-name} { 
 		ul {
 			display: none;
@@ -116,70 +111,9 @@ li{
 
 @media( max-width: 767px ){
 	
-
-	.nav{
-		.container{
-			padding: 0;
-		}
-		.nav-menu{
-			width: 100%;
-		}
-
-	}
-
-	// ----------------list-style-------------------//
-	li{
-		a{
-			border-bottom: solid 1px $border-color;
-		}
-	}
-	
-	ul#{$ul-class-name} { 
-		ul {
-			display: none;
-			transform: translateY(20px);
-			opacity: 0;
-			width: 100%;
-			transition: all 0.1s linear;
-		}
-		
-		>li#{$li-class-name}{
-			>a {
-				&:after {
-					content: "\f107";
-					font: normal normal normal 14px/1 FontAwesome;
-					margin-left: 5px;
-				}
-			}
-		}
-	}
-	
-	li {
-		&:hover {
-			>ul {
-				display: block;
-				transform: translateY(0);
-				opacity: 1;
-				animation-name: example;
-				position: relative;
-				animation-duration: 2s;
-				animation-iteration-count: 1;
-				animation-fill-mode: forwards;
-			}
-		}
-		>ul {
-			>li#{$li-class-name} {
-				>a {
-					&:after {
-						content: "\f107";
-						font: normal normal normal 14px/1 FontAwesome;
-						margin-left: 10px;
-							
-					}
-				}
-			}
-		}
-	}	
+.desktop{
+	display: none;
+}
 
 }
 
