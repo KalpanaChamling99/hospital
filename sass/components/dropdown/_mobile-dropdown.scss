@@ -106,8 +106,6 @@ $child-color: #000;
 .mobile{
     .search-n-menu-icon{
 	margin-left: 10px;
-	// float: left;
-    // margin-top: 10px;
 
     #mobile-search, .icons{
         float:left;
@@ -128,7 +126,7 @@ $child-color: #000;
     .icons{
         margin-left: 10px;
         color: $white;
-        margin-top: 10px;
+		margin-top: 10px;
 
         .bars{
             display: none;

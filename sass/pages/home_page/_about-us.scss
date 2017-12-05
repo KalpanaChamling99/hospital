@@ -5,6 +5,10 @@
 .about-us{
     margin: 120px 0 175px 0;
 
+    @include media(xs){
+        margin: 50px 0;
+    }
+
     .about-us-description{
        
         h1{

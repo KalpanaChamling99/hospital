@@ -33,10 +33,8 @@ function ui(){
     this.mobile = function(){
         var $search =$('.search-n-menu-icon');
         if($search.length > 0){
-            $('.mobile-search').on('click',function(){
-               
+            $('.mobile-search').on('click',function(e){ 
                 $('#mobile-search').toggle(1000);
-                // $('.right-menu').toggle(1000);
                 $('.mobile-search').toggleClass('fa-close');
             
             });

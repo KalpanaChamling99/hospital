@@ -10,6 +10,10 @@
 .theme{
     margin: 165px 0 220px 0;
     text-align: center;
+
+    @include media(xs){
+        margin: 50px 0;
+    }
    
     h1{
         @extend %common-style;
@@ -35,14 +39,22 @@
         margin-top: 40px;
     }
     
+    
     .image{
         margin-top: 95px;
+        @include media(xs){
+            margin-top: 50px;
+        }
+        
     }
     
     .title{
         @extend %text-color;
         margin-top: 85px;
         font-size: 20px;
+        @include media(xs){
+            margin-top: 50px;
+        }
     }
     
     .description{
@@ -52,6 +64,9 @@
         
         @include media(md){
             font-size: 14px;
+        }
+        @include media(xs){
+            margin-top: 50px;
         }
     }
 

@@ -16,6 +16,9 @@ footer{
  
     .wrapper{
         padding: 110px 0 115px 0;
+        @include media(xs){
+            padding: 50px 0 ;
+        }
     }
     
     .footer{
@@ -47,6 +50,10 @@ footer{
         .appointment-contact{
             margin: 120px 0 10px 0;
             padding-left: 20px;
+            @include media(xs){
+                margin-top: 50px;
+                padding-left: 0;
+            }
         }
     
     }

@@ -1,10 +1,16 @@
 .doctor-panel{
     margin: 135px 0 175px 0;
     text-align: center;
+    @include media(xs){
+        margin: 50px 0;     
+    }
     
    
     h1{
         margin-bottom: 130px;
+        @include media(xs){
+            margin-bottom: 50px;
+        }
         font-size: 40px;
         word-spacing: 4px;
         
