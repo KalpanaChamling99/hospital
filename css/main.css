@@ -260,7 +260,7 @@ li ul li a {
     margin-top: 10px; }
     @media (max-width: 767px) {
       .mobile .search-n-menu-icon .icons {
-        padding-left: 30px; } }
+        padding-left: 40px; } }
     .mobile .search-n-menu-icon .icons .bars {
       display: none; }
       @media (max-width: 767px) {
