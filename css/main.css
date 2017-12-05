@@ -242,6 +242,8 @@ li ul li a {
       right: 10px; }
   ul.mobile-menu ul {
     display: none; } }
+.mobile .col-half {
+  width: 50%; }
 .mobile .search-n-menu-icon {
   margin-left: 10px; }
   .mobile .search-n-menu-icon #mobile-search, .mobile .search-n-menu-icon .icons {
@@ -256,11 +258,15 @@ li ul li a {
     margin-left: 10px;
     color: #fff;
     margin-top: 10px; }
+    @media (max-width: 767px) {
+      .mobile .search-n-menu-icon .icons {
+        padding-left: 30px; } }
     .mobile .search-n-menu-icon .icons .bars {
       display: none; }
       @media (max-width: 767px) {
         .mobile .search-n-menu-icon .icons .bars {
-          display: inline; } }
+          display: inline;
+          padding-left: 10px; } }
 
 .default-btn, .primary-btn, .btn-shadow {
   font-size: 18px;

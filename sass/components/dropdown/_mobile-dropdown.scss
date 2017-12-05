@@ -104,6 +104,9 @@ $child-color: #000;
 
  
 .mobile{
+	.col-half{
+		width: 50%;
+	}
     .search-n-menu-icon{
 	margin-left: 10px;
 
@@ -127,11 +130,14 @@ $child-color: #000;
         margin-left: 10px;
         color: $white;
 		margin-top: 10px;
-
+		@include media(xs){
+			padding-left: 30px;
+		}
         .bars{
             display: none;
             @include media(xs){
-                display: inline;			
+				display: inline;	
+				padding-left: 10px;		
             }
         }
     }
