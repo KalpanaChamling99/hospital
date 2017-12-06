@@ -26,7 +26,9 @@
             font-size: 13px;            
             font-weight: 600;
             color: #525252;
-
+            @include media(md){
+                font-size: 16px;
+            }
             
             @include media(sm){
                 font-size: 10px;
