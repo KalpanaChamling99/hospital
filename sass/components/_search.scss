@@ -1,36 +1,41 @@
 .desktop{
-.search-n-menu-icon{
-    margin-left: 10px;
-    @include media(sm){
-        margin-left: 0;
-    }
-    float: left;
-
-    #search, .icons{
-        float:left;
-    }
-    #search{
-        display: none;
-
-        .form-control{
-            padding: 5px 10px;
-        }
-    }
-    
-
-    .icons{
+    .search-n-menu-icon{
         margin-left: 10px;
-        color: $white;
-        margin-top: 10px;
+        @include media(sm){
+            margin-left: 0;
+        }
+        float: left;
 
-        .bars{
+        #search, .icons{
+            float:left;
+        }
+        #search{
             display: none;
-            @include media(xs){
-				display: inline;			
-			}
+
+            .form-control{
+                padding: 10px 10px;
+            }
+        }
+        
+
+        .icons{
+            margin-left: 10px;
+            color: $white;
+            margin-top: 10px;
+            .search{
+                @include media(sm){
+                    font-size: 18px;
+                }
+            }
+
+            .bars{
+                display: none;
+                @include media(xs){
+                    display: inline;			
+                }
+            }
         }
     }
-}
 }
 
 
