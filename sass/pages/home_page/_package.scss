@@ -6,6 +6,11 @@
     .wrapper{
         padding: 95px 0 65px 0;
     }
+    .col-3{
+        @include media(md){
+            margin-bottom: 50px;
+        }
+    }
     
     .title{
         margin-bottom: 85px;
