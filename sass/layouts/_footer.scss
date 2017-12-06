@@ -5,10 +5,6 @@
      font-size: 16px;
      word-spacing: 2px;
     
-     
-     @include media(sm){
-         font-size: 12px;
-     }
      @include media(xs){
         font-size: 16px;
     }
@@ -30,7 +26,12 @@ footer{
             display: block;
         }
     }  
- 
+    .col-half{
+        @include media(sm){
+            width: 100%;
+        }
+    }
+   
     .wrapper{
         padding: 110px 0 115px 0;
         @include media(xs){
@@ -69,6 +70,10 @@ footer{
         .appointment-contact{
             margin: 120px 0 10px 0;
             padding-left: 10px;
+            @include media(sm){
+                margin: 20px 0;
+                padding-left: 0;
+            }
             @include media(xs){
                 margin-top: 50px;
                 padding-left: 0;

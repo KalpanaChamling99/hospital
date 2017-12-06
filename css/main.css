@@ -413,9 +413,6 @@ footer, footer a {
   line-height: 25px;
   font-size: 16px;
   word-spacing: 2px; }
-  @media (max-width: 991px) {
-    footer, footer a {
-      font-size: 12px; } }
   @media (max-width: 767px) {
     footer, footer a {
       font-size: 16px; } }
@@ -429,6 +426,9 @@ footer {
     @media (max-width: 1199px) {
       footer .clearfix {
         display: block; } }
+  @media (max-width: 991px) {
+    footer .col-half {
+      width: 100%; } }
   footer .wrapper {
     padding: 110px 0 115px 0; }
     @media (max-width: 767px) {
@@ -455,6 +455,10 @@ footer {
   footer .footer .appointment-contact {
     margin: 120px 0 10px 0;
     padding-left: 10px; }
+    @media (max-width: 991px) {
+      footer .footer .appointment-contact {
+        margin: 20px 0;
+        padding-left: 0; } }
     @media (max-width: 767px) {
       footer .footer .appointment-contact {
         margin-top: 50px;
