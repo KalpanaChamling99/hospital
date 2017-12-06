@@ -407,6 +407,11 @@ footer {
 
 footer {
   background-color: #202020; }
+  footer .clearfix {
+    display: none; }
+    @media (max-width: 1199px) {
+      footer .clearfix {
+        display: block; } }
   footer .wrapper {
     padding: 110px 0 115px 0; }
     @media (max-width: 767px) {
