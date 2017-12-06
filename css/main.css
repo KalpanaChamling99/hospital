@@ -385,8 +385,7 @@ textarea {
   font-size: 17px;
   font-weight: 600;
   color: #2687ff;
-  border-radius: 15px;
-  border-style: none; }
+  border-radius: 15px; }
   @media (max-width: 991px) {
     .button {
       width: 150px;
@@ -843,7 +842,7 @@ footer {
           word-spacing: 2px; }
           @media (max-width: 1199px) {
             .contact-us .contact-form .wrapper .title h2 {
-              font-size: 12px;
+              font-size: 16px;
               word-spacing: 1px; } }
           @media (max-width: 767px) {
             .contact-us .contact-form .wrapper .title h2 {
