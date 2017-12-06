@@ -41,6 +41,9 @@
   float: left;
   width: 33.33%;
   padding: 0 15px; }
+  @media (max-width: 1199px) {
+    .col-3 {
+      width: 50%; } }
   @media (max-width: 767px) {
     .col-3 {
       width: 100%;
