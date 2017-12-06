@@ -21,6 +21,9 @@
                     @include media(sm){
                         font-size: 20px;
                     }
+                    @include media(xs){
+                        font-size: 20px;
+                    }
     
                 }
     
@@ -31,6 +34,9 @@
                     @include media(md){
                         font-size: 12px;
                         word-spacing: 1px;
+                    }
+                    @include media(xs){
+                        font-size: 14px;
                     }
                 }
             }
