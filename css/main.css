@@ -110,7 +110,8 @@
   box-sizing: border-box; }
 
 body {
-  font-family: "Poppins"; }
+  font-family: "Poppins";
+  border-radius: 0; }
 
 .nav {
   background-color: #0a19ed; }
