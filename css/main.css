@@ -386,7 +386,7 @@ textarea {
   font-weight: 600;
   color: #2687ff;
   border-radius: 15px;
-  border: 0; }
+  border-style: none; }
   @media (max-width: 991px) {
     .button {
       width: 150px;
