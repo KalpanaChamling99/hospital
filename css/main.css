@@ -388,7 +388,8 @@ ul li {
   border: none; }
   @media (max-width: 991px) {
     .form-control, textarea {
-      font-size: 15px; } }
+      font-size: 20px;
+      padding: 10px 15px; } }
 
 textarea {
   height: 225px; }
@@ -850,6 +851,10 @@ footer {
   @media (max-width: 767px) {
     .contact-us {
       margin: 50px 0 0 0; } }
+  @media (max-width: 1199px) {
+    .contact-us .col-half {
+      width: 100%;
+      margin-bottom: 20px; } }
   .contact-us .contact-form {
     background-color: blue; }
     .contact-us .contact-form .wrapper {
@@ -859,18 +864,18 @@ footer {
         margin-bottom: 60px; }
         .contact-us .contact-form .wrapper .title h1 {
           font-size: 25px; }
-          @media (max-width: 991px) {
+          @media (max-width: 1199px) {
             .contact-us .contact-form .wrapper .title h1 {
-              font-size: 22px; } }
+              font-size: 30px; } }
           @media (max-width: 767px) {
             .contact-us .contact-form .wrapper .title h1 {
-              font-size: 20px; } }
+              font-size: 25px; } }
         .contact-us .contact-form .wrapper .title h2 {
           font-size: 15px;
           word-spacing: 2px; }
           @media (max-width: 1199px) {
             .contact-us .contact-form .wrapper .title h2 {
-              font-size: 16px;
+              font-size: 18px;
               word-spacing: 1px; } }
           @media (max-width: 767px) {
             .contact-us .contact-form .wrapper .title h2 {

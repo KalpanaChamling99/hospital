@@ -4,7 +4,12 @@
     @include media(xs){
         margin: 50px 0 0 0  ;
     }
-    
+    .col-half{
+        @include media(md){
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
     .contact-form{
         background-color: blue;
      
@@ -18,11 +23,11 @@
                 h1{
                     font-size: 25px;
                     
-                    @include media(sm){
-                        font-size: 22px;
+                    @include media(md){
+                        font-size: 30px;
                     }
                     @include media(xs){
-                        font-size: 20px;
+                        font-size: 25px;
                     }
     
                 }
@@ -32,7 +37,7 @@
                     word-spacing: 2px;
                   
                     @include media(md){
-                        font-size: 16px;
+                        font-size: 18px;
                         word-spacing: 1px;
                     }
                     @include media(xs){
