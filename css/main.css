@@ -44,7 +44,7 @@
   @media (max-width: 1199px) {
     .col-3 {
       width: 50%;
-      margin-bottom: 20px; } }
+      margin-bottom: 30px; } }
   @media (max-width: 767px) {
     .col-3 {
       width: 100%;
@@ -392,21 +392,23 @@ textarea {
       padding: 10px  5px;
       font-size: 14px; } }
 
-footer {
+footer, footer a {
   color: #bababa;
   font-weight: 600;
   line-height: 25px;
   font-size: 16px;
   word-spacing: 2px; }
   @media (max-width: 991px) {
-    footer {
+    footer, footer a {
       font-size: 12px; } }
   @media (max-width: 767px) {
-    footer {
+    footer, footer a {
       font-size: 16px; } }
 
 footer {
   background-color: #202020; }
+  footer a {
+    text-decoration: none; }
   footer .clearfix {
     display: none; }
     @media (max-width: 1199px) {
@@ -437,7 +439,7 @@ footer {
     margin: 10px 0 0 0; }
   footer .footer .appointment-contact {
     margin: 120px 0 10px 0;
-    padding-left: 20px; }
+    padding-left: 10px; }
     @media (max-width: 767px) {
       footer .footer .appointment-contact {
         margin-top: 50px;
