@@ -218,8 +218,8 @@ body {
     font-size: 13px;
     background-color: #1b24a7; }
 
-  a {
-    border-bottom: solid 1px #0310ba;
+  li a {
+    border-bottom: solid 1px #fff;
     letter-spacing: 1px;
     padding: 10px 10px;
     font-weight: 600;
@@ -476,7 +476,8 @@ footer {
           font-size: 15px; } }
       @media (max-width: 767px) {
         .banner .banner-description .text {
-          margin: 50px 0; } }
+          margin: 50px 0;
+          font-size: 16px; } }
     .banner .banner-description .button-section .default-btn {
       color: #0078ff; }
       @media (max-width: 991px) {
@@ -522,6 +523,9 @@ footer {
     @media (max-width: 991px) {
       .about-us .about-us-description p {
         font-size: 15px; } }
+    @media (max-width: 767px) {
+      .about-us .about-us-description p {
+        font-size: 16px; } }
   .about-us .about-us-description a {
     text-decoration: none;
     text-align: center; }
