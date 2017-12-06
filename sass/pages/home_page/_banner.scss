@@ -11,6 +11,9 @@
 
     .image{
         margin-top: 100px;
+        @include media(sm){
+            margin-top: 0;
+        }
 
         @include media(xs){
             margin-top: 50px;
@@ -67,7 +70,8 @@
             font-weight: 300;
           
             @include media(sm){
-                font-size: 15px;
+                font-size: 20px;
+                margin: 45px 0; 
             }
 
             @include media(xs){

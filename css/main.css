@@ -474,6 +474,9 @@ footer {
         padding-top: 50px; } }
   .banner .image {
     margin-top: 100px; }
+    @media (max-width: 991px) {
+      .banner .image {
+        margin-top: 0; } }
     @media (max-width: 767px) {
       .banner .image {
         margin-top: 50px; } }
@@ -516,7 +519,8 @@ footer {
       font-weight: 300; }
       @media (max-width: 991px) {
         .banner .banner-description .text {
-          font-size: 15px; } }
+          font-size: 20px;
+          margin: 45px 0; } }
       @media (max-width: 767px) {
         .banner .banner-description .text {
           margin: 50px 0;
