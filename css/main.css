@@ -352,6 +352,9 @@ ul li {
   padding: 15px 15px 0;
   background-color: #fff;
   box-shadow: 0px 0px 7px 5px #eaeaeadd; }
+  @media (max-width: 991px) {
+    .post .image {
+      text-align: center; } }
   .post .description {
     padding: 30px; }
     .post .description h1 {
@@ -579,13 +582,16 @@ footer {
         margin-left: 100px; } }
     @media (max-width: 991px) {
       .about-us .image {
-        margin-top: 60px;
-        margin-left: 10px; } }
+        margin-top: 200px;
+        margin-left: 20px; } }
     .about-us .image .img-responsive {
       margin-top: 250px; }
       @media (max-width: 1199px) {
         .about-us .image .img-responsive {
           margin-top: 200px; } }
+      @media (max-width: 991px) {
+        .about-us .image .img-responsive {
+          margin-top: 250px; } }
       @media (max-width: 767px) {
         .about-us .image .img-responsive {
           margin-top: 200px; } }
@@ -799,6 +805,9 @@ footer {
   margin: 80px 0 105px 0;
   padding: 100px 0;
   background-color: #f9f5f5; }
+  @media (max-width: 991px) {
+    .latest-posts .col-3 {
+      width: 100%; } }
   @media (max-width: 767px) {
     .latest-posts {
       margin: 0;
@@ -819,17 +828,21 @@ footer {
     font-size: 13px;
     font-weight: 600;
     color: #525252; }
+    @media (max-width: 991px) {
+      .latest-posts .description .comment .col-half {
+        width: 50%; } }
+    @media (max-width: 767px) {
+      .latest-posts .description .comment .col-half {
+        width: 100%; } }
     @media (max-width: 1199px) {
       .latest-posts .description .comment {
         font-size: 16px; } }
     @media (max-width: 991px) {
       .latest-posts .description .comment {
-        font-size: 10px; } }
+        font-size: 18px; } }
     @media (max-width: 767px) {
       .latest-posts .description .comment {
         font-size: 14px; } }
-    .latest-posts .description .comment .col-half {
-      width: 100%; }
 
 .contact-us {
   margin-bottom: 60px;

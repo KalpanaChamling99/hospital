@@ -2,7 +2,12 @@
     padding: 15px 15px 0;
     background-color: #fff;
     box-shadow: 0px 0px 7px 5px #eaeaeadd;
-
+   
+    .image{
+        @include media(sm){
+            text-align: center;
+        }
+    }
     .description{
         padding: 30px;
 
