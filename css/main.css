@@ -513,11 +513,6 @@ footer {
     word-spacing: 20px;
     letter-spacing: 4px;
     font-weight: 600; }
-    @media (max-width: 991px) {
-      .about-us .about-us-description h1 {
-        font-size: 40px;
-        word-spacing: 2px;
-        letter-spacing: 2px; } }
   .about-us .about-us-description .line {
     margin: 35px 0 65px 0; }
     .about-us .about-us-description .line .hr1 {
@@ -535,9 +530,6 @@ footer {
   .about-us .about-us-description p {
     line-height: 40px;
     font-size: 20px; }
-    @media (max-width: 991px) {
-      .about-us .about-us-description p {
-        font-size: 15px; } }
     @media (max-width: 767px) {
       .about-us .about-us-description p {
         font-size: 16px; } }
@@ -549,6 +541,10 @@ footer {
   .about-us .image {
     margin-left: 145px;
     background-color: #3983fe; }
+    @media (max-width: 1199px) {
+      .about-us .image {
+        margin-top: 100px;
+        margin-left: 100px; } }
     @media (max-width: 991px) {
       .about-us .image {
         margin-top: 60px;
@@ -557,7 +553,7 @@ footer {
       margin-top: 250px; }
       @media (max-width: 1199px) {
         .about-us .image .img-responsive {
-          margin-top: 400px; } }
+          margin-top: 200px; } }
       @media (max-width: 767px) {
         .about-us .image .img-responsive {
           margin-top: 200px; } }

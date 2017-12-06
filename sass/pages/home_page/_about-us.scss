@@ -11,17 +11,16 @@
 
     .about-us-description{
        
-        h1{
-            // font-size: 50px;    
+        h1{   
             font-size: $font-size-h1-lg;
             word-spacing: 20px;
             letter-spacing: 4px;
             font-weight: $font-weight-bold;
 
             @include media(sm){
-                font-size: 40px;
-                word-spacing: 2px;
-                letter-spacing: 2px;
+                // font-size: 40px;
+                // word-spacing: 2px;
+                // letter-spacing: 2px;
             }
         }
       
@@ -53,7 +52,7 @@
             line-height: 40px;
             font-size: $font-size-lg;
             @include media(sm){
-                font-size:15px;
+                // font-size:15px;
             }
 
             @include media(xs){
@@ -75,16 +74,20 @@
     .image{
         margin-left: 145px;
         background-color: #3983fe;
+        @include media(md){
+            margin-top: 100px;
+            margin-left: 100px;
+        }
         @include media(sm){
             margin-top: 60px;
-            margin-left: 10px
+            margin-left: 10px;
         }
             
         .img-responsive{
             margin-top: 250px;     
 
             @include media(md){
-                margin-top: 400px;
+                margin-top: 200px;
             }  
             @include media(xs){
                 margin-top: 200px;

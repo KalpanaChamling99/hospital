@@ -1,7 +1,7 @@
 ul{
     li{
         list-style: none;
-        // display: inline;
+       
 
         @include media(xs){
             // display: block;
