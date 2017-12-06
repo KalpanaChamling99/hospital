@@ -5,7 +5,7 @@
 %text-color{
     color: #686666;
     line-height: 30px;
-    font-weight: 500;
+    font-weight: $font-weight-semi-bold;
 }
 .theme{
     margin: 165px 0 220px 0;
@@ -51,7 +51,7 @@
     .title{
         @extend %text-color;
         margin-top: 85px;
-        font-size: 20px;
+        font-size: $font-size-lg;
         @include media(xs){
             margin-top: 50px;
         }

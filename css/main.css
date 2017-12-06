@@ -51,6 +51,9 @@
   float: left;
   width: 25%;
   padding: 0 15px; }
+  @media (max-width: 1199px) {
+    .col-4 {
+      width: 50%; } }
   @media (max-width: 767px) {
     .col-4 {
       width: 100%;
@@ -123,9 +126,6 @@ body {
       font-size: 15px;
       text-align: right;
       float: left; }
-      @media (max-width: 991px) {
-        .nav .nav-menu .right-menu {
-          font-size: 14px; } }
       @media (max-width: 767px) {
         .nav .nav-menu .right-menu {
           display: none;
@@ -136,29 +136,24 @@ body {
         padding: 10px 10px;
         font-weight: 600;
         color: #fff; }
-        @media (max-width: 767px) {
-          .nav .nav-menu .right-menu a {
-            font-size: 10px; } }
 
 @media (max-width: 767px) {
   li {
     width: 100%; } }
 
-ul {
+.desktop ul {
   list-style: none;
   padding: 0; }
-  ul li a {
+  .desktop ul li a {
     display: block;
     text-decoration: none;
     color: #fff;
     font-size: 18px;
     padding: 15px; }
-
-a:hover {
+.desktop a:hover {
   background-color: #010a8c; }
-
-li ul li a {
-  font-size: 15px; }
+.desktop li ul li a {
+  font-size: 16px; }
 
 @media (min-width: 768px) {
   .mobile {
@@ -223,13 +218,13 @@ li ul li a {
     font-size: 13px;
     background-color: #1b24a7; }
 
-  li a {
+  a {
     border-bottom: solid 1px #0310ba;
     letter-spacing: 1px;
     padding: 10px 10px;
     font-weight: 600;
     color: #fff;
-    font-size: 10px; }
+    font-size: 18px; }
 
   ul.mobile-menu li.has-sub > a {
     position: relative; }
@@ -269,7 +264,7 @@ li ul li a {
           padding-left: 10px; } }
 
 .default-btn, .primary-btn, .btn-shadow {
-  font-size: 18px;
+  font-size: 20px;
   width: 160px;
   padding: 10px 0;
   border-radius: 20px;
@@ -474,7 +469,7 @@ footer {
           font-size: 17px; } }
     .banner .banner-description .text {
       margin: 90px 0;
-      font-size: 18px;
+      font-size: 20px;
       font-weight: 300; }
       @media (max-width: 991px) {
         .banner .banner-description .text {
@@ -498,7 +493,7 @@ footer {
     .about-us {
       margin: 50px 0; } }
   .about-us .about-us-description h1 {
-    font-size: 50px;
+    font-size: 45px;
     word-spacing: 20px;
     letter-spacing: 4px;
     font-weight: 600; }
@@ -654,7 +649,7 @@ footer {
       margin: 50px 0; } }
   .doctor-panel h1 {
     margin-bottom: 130px;
-    font-size: 40px;
+    font-size: 45px;
     word-spacing: 4px; }
     @media (max-width: 767px) {
       .doctor-panel h1 {
@@ -694,7 +689,7 @@ footer {
   .package .title {
     margin-bottom: 85px; }
     .package .title h1 {
-      font-size: 40px; }
+      font-size: 45px; }
       @media (max-width: 991px) {
         .package .title h1 {
           font-size: 30px; } }
@@ -753,7 +748,7 @@ footer {
       padding: 50px 0 0 0; } }
   .latest-posts h1 {
     color: #686767;
-    font-size: 50px;
+    font-size: 45px;
     word-spacing: 20px;
     font-weight: 600;
     margin-bottom: 30px; }

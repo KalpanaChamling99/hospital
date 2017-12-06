@@ -22,7 +22,7 @@
 			float: left;
 			
 			@include media(sm){
-				font-size: 14px;
+				// font-size: 14px;
 			}
 
 			@include media(xs){
@@ -38,7 +38,7 @@
 				color: #fff;
 			
 				@include media(xs){
-					font-size: 10px;		
+					// font-size: 10px;		
 				}
 			}
 			

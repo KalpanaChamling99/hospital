@@ -9,9 +9,9 @@ $container-lg: 1200px;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
+    
   
 
-    // @include container-fixed;
 
     @include media(md){
         width: $container-md;
@@ -64,6 +64,13 @@ $container-lg: 1200px;
     float: left;
     width: 33.33%;
     padding: 0 15px;
+
+    @include media(md){
+        // width: 50%;
+    }
+    @include media(sm){
+    
+    }
      @include media(xs){
         width: 100%;
         padding: 0;
@@ -74,6 +81,9 @@ $container-lg: 1200px;
     float: left;
     width: 25%;
     padding: 0 15px;
+    @include media(md){
+        width: 50%;
+    }
      @include media(xs){
         width: 100%;
         padding: 0;

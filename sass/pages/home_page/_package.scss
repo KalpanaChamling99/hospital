@@ -10,7 +10,7 @@
     .title{
         margin-bottom: 85px;
         h1{
-            font-size: 40px;
+            font-size: $font-size-h1-lg;
 
             @include media(sm){
                 font-size: 30px;

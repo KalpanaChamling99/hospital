@@ -58,16 +58,16 @@ $child-color: #000;
 		}
 	}	
 
-	li{
+	
 		a{
 			border-bottom: solid 1px $border-color;
 			letter-spacing: 1px;
 			padding: 10px 10px;
 			font-weight: 600;
 			color: #fff;
-			font-size: 10px;		
+			font-size: 18px;		
 		}
-	}
+	
 		
 	
 	ul#{$ul-class-name} { 

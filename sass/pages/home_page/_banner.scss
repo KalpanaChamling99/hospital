@@ -15,9 +15,7 @@
         @include media(xs){
             margin-top: 50px;
         }
-        // .img-responsive{
-
-        // }
+       
     }
     
     .banner-description{
@@ -29,8 +27,8 @@
         }
        
         h1{
-            font-size: 45px;
-            font-weight: 300; 
+            font-size: $font-size-h1-lg;
+            font-weight: $font-weight-normal; 
             @include media(xs){
                 font-size: 20px;
             }
@@ -38,8 +36,8 @@
         }
        
         h2{
-            font-size: 60px;
-            font-weight: 600;
+            font-size: $font-size-h2-lg;
+            font-weight: $font-weight-bold;
             @include media(md){
                 font-size: 52px;
             }
@@ -53,8 +51,8 @@
         }
         
         h3{
-            font-size: 25px;
-            font-weight: 300;
+            font-size: $font-size-h3-lg;
+            font-weight: $font-weight-normal;
             @include media(md){
                 font-size: 23px;
             }
@@ -65,7 +63,7 @@
        
         .text{
             margin: 90px 0;
-            font-size: 18px;
+            font-size: $font-size-lg;
             font-weight: 300;
           
             @include media(sm){
