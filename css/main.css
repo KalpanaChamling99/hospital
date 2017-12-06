@@ -605,7 +605,8 @@ footer {
         font-size: 14px; } }
     @media (max-width: 767px) {
       .theme .description {
-        margin-top: 50px; } }
+        margin-top: 50px;
+        font-size: 18px; } }
 
 .page-sample {
   background-color: #0a19ed;
