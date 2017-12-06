@@ -29,6 +29,7 @@ textarea{
     color: #2687ff;
 
     border-radius: 15px;
+    border-color: none;
 
       @include media(sm){
              width: 150px;
