@@ -10,6 +10,10 @@
             font-size: 15px;
             color: #000;
             word-spacing: 2px;
+            @include media(md){
+                font-size: 20px;
+            } 
+
             @include media(xs){
                 font-size: 20px;
             }
@@ -19,6 +23,9 @@
             font-size: 13px;            
             font-weight: 600;
             color: #525252;
+            @include media(md){
+                font-size: 18px;
+            }
             @include media(xs){
                 font-size: 16px;
             }

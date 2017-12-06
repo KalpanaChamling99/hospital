@@ -347,6 +347,9 @@ ul li {
       font-size: 15px;
       color: #000;
       word-spacing: 2px; }
+      @media (max-width: 1199px) {
+        .post .description h1 {
+          font-size: 20px; } }
       @media (max-width: 767px) {
         .post .description h1 {
           font-size: 20px; } }
@@ -354,6 +357,9 @@ ul li {
       font-size: 13px;
       font-weight: 600;
       color: #525252; }
+      @media (max-width: 1199px) {
+        .post .description p {
+          font-size: 18px; } }
       @media (max-width: 767px) {
         .post .description p {
           font-size: 16px; } }
