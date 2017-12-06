@@ -5,6 +5,7 @@
 	.col-1{
 		@include media(sm){
 			width: 100%;
+			margin-bottom: 20px;
 		}
 	}
 	.col-11{
