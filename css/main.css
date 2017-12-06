@@ -141,6 +141,9 @@ body {
   li {
     width: 100%; } }
 
+ul li {
+  list-style: none; }
+
 .desktop ul {
   list-style: none;
   padding: 0; }

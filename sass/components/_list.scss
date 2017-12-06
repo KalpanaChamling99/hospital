@@ -1,10 +1,10 @@
-// ul{
-//     li{
-//         list-style: none;
-//         display: inline;
+ul{
+    li{
+        list-style: none;
+        // display: inline;
 
-//         @include media(xs){
-//             display: block;
-//         }
-//     }
-// }
+        @include media(xs){
+            // display: block;
+        }
+    }
+}
