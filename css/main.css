@@ -735,11 +735,17 @@ footer {
         @media (max-width: 991px) {
           .package .package-info .package-description h1 {
             font-size: 20px; } }
+      .package .package-info .package-description P {
+        color: #aba5a5;
+        padding: 0 2px; }
       .package .package-info .package-description ul li {
         color: #aba5a5; }
         @media (max-width: 1199px) {
           .package .package-info .package-description ul li {
             font-size: 13px; } }
+        @media (max-width: 767px) {
+          .package .package-info .package-description ul li {
+            font-size: 16px; } }
       .package .package-info .package-description .button-section {
         margin: 50px 0 0 40px; }
 
