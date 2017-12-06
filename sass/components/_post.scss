@@ -10,12 +10,18 @@
             font-size: 15px;
             color: #000;
             word-spacing: 2px;
+            @include media(xs){
+                font-size: 20px;
+            }
         }
 
         p{
             font-size: 13px;            
             font-weight: 600;
             color: #525252;
+            @include media(xs){
+                font-size: 16px;
+            }
         }
     }
 

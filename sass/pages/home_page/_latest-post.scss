@@ -31,6 +31,9 @@
             @include media(sm){
                 font-size: 10px;
             }
+            @include media(xs){
+                font-size: 14px;
+            }
             .col-half{
                 
                     width: 100%;

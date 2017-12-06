@@ -340,10 +340,16 @@ body {
       font-size: 15px;
       color: #000;
       word-spacing: 2px; }
+      @media (max-width: 767px) {
+        .post .description h1 {
+          font-size: 20px; } }
     .post .description p {
       font-size: 13px;
       font-weight: 600;
       color: #525252; }
+      @media (max-width: 767px) {
+        .post .description p {
+          font-size: 16px; } }
 
 .form-control, textarea {
   width: 100%;
@@ -776,6 +782,9 @@ footer {
     @media (max-width: 991px) {
       .latest-posts .description .comment {
         font-size: 10px; } }
+    @media (max-width: 767px) {
+      .latest-posts .description .comment {
+        font-size: 14px; } }
     .latest-posts .description .comment .col-half {
       width: 100%; }
 
