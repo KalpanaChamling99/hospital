@@ -114,6 +114,12 @@ body {
 
 .nav {
   background-color: #0a19ed; }
+  @media (max-width: 991px) {
+    .nav .col-1 {
+      width: 100%; } }
+  @media (max-width: 991px) {
+    .nav .col-11 {
+      width: 100%; } }
   .nav .wrapper {
     padding-top: 60px; }
     @media (max-width: 767px) {
@@ -132,7 +138,6 @@ body {
       float: left; }
       @media (max-width: 767px) {
         .nav .nav-menu .right-menu {
-          display: none;
           text-align: center;
           width: 100%; } }
       .nav .nav-menu .right-menu a {
@@ -321,6 +326,9 @@ ul li {
 .desktop .search-n-menu-icon {
   margin-left: 10px;
   float: left; }
+  @media (max-width: 991px) {
+    .desktop .search-n-menu-icon {
+      margin-left: 0; } }
   .desktop .search-n-menu-icon #search, .desktop .search-n-menu-icon .icons {
     float: left; }
   .desktop .search-n-menu-icon #search {

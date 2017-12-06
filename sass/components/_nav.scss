@@ -2,6 +2,16 @@
 .nav{
 	background-color: $blue;
 
+	.col-1{
+		@include media(sm){
+			width: 100%;
+		}
+	}
+	.col-11{
+		@include media(sm){
+			width: 100%;
+		}
+	}
 
 	.wrapper{
 		padding-top: 60px;
@@ -20,11 +30,12 @@
 			font-size: 15px;
 			text-align: right;
 			float: left;
-			
+			@include media(sm){
+				// font-size: 12px;	
+			}
 			
 
 			@include media(xs){
-				display: none;
 				text-align: center;
 				width: 100%;
 			}
