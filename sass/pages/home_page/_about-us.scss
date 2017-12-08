@@ -8,24 +8,30 @@
     @include media(xs){
         margin: 50px 0;
     }
-
+    .container{
+        @include media(xs){
+            padding: 0;
+        }
+    }
     .about-us-description{
-       
+        @include media(xs){
+            padding: 0 15px;
+        }
         h1{   
             font-size: $font-size-h1-lg;
             word-spacing: 20px;
             letter-spacing: 4px;
             font-weight: $font-weight-bold;
 
-            @include media(sm){
-                // font-size: 40px;
-                // word-spacing: 2px;
-                // letter-spacing: 2px;
+            @include media(xs){
+                font-size: 40px;
+                word-spacing: 2px;
+                letter-spacing: 2px;
             }
         }
       
         .line{
-            margin: 35px 0 65px 0;
+            margin: 35px 0;
            
 
             .hr1{
@@ -85,9 +91,9 @@
         
         }
 
-        @include media(sm){
-           
-            margin-top: 50px;
+        @include media(xs){
+            margin: 50px 0 0 0;
+            
         
         }
         
@@ -104,7 +110,7 @@
                 margin-top: 250px;
             }  
             @include media(xs){
-                margin-top: 200px;
+                margin-top: 100px;
             }    
              
 

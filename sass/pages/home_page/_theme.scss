@@ -1,6 +1,11 @@
 %common-style{
     word-spacing: 10px;
     line-height: 60px;
+
+    @include media(xs){
+        word-spacing: 4px;
+        line-height: 40px;
+    }
 }
 %text-color{
     color: #686666;
@@ -18,8 +23,13 @@
     h1{
         @extend %common-style;
         font-size: 30px;
+       
         @include media(sm){
             font-size: 25px;
+        }
+       
+        @include media(xs){
+            font-size: 22px;
         }
 
     }
@@ -30,6 +40,7 @@
         font-size: 25px;
         @include media(sm){
             font-size: 20px;
+            margin-top: 5px;
         }
 
        

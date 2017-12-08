@@ -1,6 +1,11 @@
 .page-sample{
     background-color: $blue;
     color: #fff;
+    .container{
+       @include media(xs){
+           padding: 0;
+       }
+    }
 
     .wrapper{
         padding-top: 135px;
@@ -23,6 +28,7 @@
         }
         @include media(xs){
             margin-top: 50px;
+            padding: 0 15px;
         }
         .description{
             font-size: $font-size-lg;

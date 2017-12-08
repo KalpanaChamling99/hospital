@@ -1,20 +1,30 @@
 .contact-us{
     margin-bottom: 60px;
     color: $white;
-    @include media(xs){
+ 
+   @include media(xs){
         margin: 50px 0 0 0  ;
     }
+
+    .container{
+        @include media(xs){
+            padding: 0;
+        }
+    }
+
     .col-half{
         @include media(md){
             width: 100%;
             margin-bottom: 20px;
         }
     }
+
+    
     .contact-form{
         background-color: blue;
      
         .wrapper{
-            padding: 45px 40px 60px 40px;
+            padding: 45px 20px 60px 20px;
            
             .title{
                 text-align: center;

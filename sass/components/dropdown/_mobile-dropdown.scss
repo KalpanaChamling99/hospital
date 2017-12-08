@@ -21,6 +21,7 @@ $child-color: #000;
 		.container{
 			padding: 0;
 		}
+	
 		.nav-menu{
 			width: 100%;
 			
@@ -30,99 +31,104 @@ $child-color: #000;
 	
 	
 	
-	// ----------------list-style-------------------//
-	.right-menu{
-		display: none;
-		.mobile-menu{
-			> li:first-child{
-				a {
-					border-top: 1px solid $border-color;
-				}
-			}
-		}
-		
-		ul {
-			list-style: none;
-			padding: 0;
-			li {
-				a {
-					display: block;
-					text-decoration: none;
-					color: #fff;
-					font-size: $parent-font-size;
-					padding: 15px;
-					font-weight: 300;
-				}
+	.mobile{
+		.wrapper{
+			@include media(xs){
+				padding: 0 10px;
 			}
 		}
 		
 		
-		li{
-			ul{
-				li{
-					a{
-						font-size: $child-font-size;
-						background-color: #1b24a7; 
-						
+		
+		.right-menu{
+			display: none;
+			.mobile-menu{
+				> li:first-child{
+					a {
+						border-top: 1px solid $border-color;
 					}
 				}
 			}
-		}	
-
-		li{
-			a{
-				border-bottom: solid 1px $border-color;
-				letter-spacing: 1px;
-				padding: 10px 10px;
-				font-weight: 600;
-				color: #fff;
-				font-size: 18px;		
-			}
-		}
 			
-		
-		ul#{$ul-class-name} { 
-
-			li#{$li-class-name}{
-				> a{
-					position: relative;
-
-					&.up{
-						&:after{
-							content: "\f106";
+			ul {
+				list-style: none;
+				padding: 0;
+				li {
+					a {
+						display: block;
+						text-decoration: none;
+						color: #fff;
+						font-size: $parent-font-size;
+						padding: 15px;
+						font-weight: 300;
+					}
+				}
+			}
+			
+			
+			li{
+				ul{
+					li{
+						a{
+							font-size: $child-font-size;
+							background-color: #1b24a7; 
+							
 						}
 					}
-					&:after {
-						content: "\f107";
-						
-						font: normal normal normal 14px/1 FontAwesome;
-						position: absolute;
-						right: 10px;
-						top: 15px;
-					}
+				}
+			}	
+
+			li{
+				a{
+					border-bottom: solid 1px $border-color;
+					letter-spacing: 1px;
+					padding: 10px 10px;
+					font-weight: 600;
+					color: #fff;
+					font-size: 18px;		
 				}
 			}
+				
+			
+			ul#{$ul-class-name} { 
 
-			ul {
-				display: none;
+				li#{$li-class-name}{
+					> a{
+						position: relative;
+
+						&.up{
+							&:after{
+								content: "\f106";
+							}
+						}
+						&:after {
+							content: "\f107";
+							
+							font: normal normal normal 14px/1 FontAwesome;
+							position: absolute;
+							right: 10px;
+							top: 15px;
+						}
+					}
+				}
+
+				ul {
+					display: none;
+				}
+				
+			
 			}
 			
-		
 		}
-		
-	}
-
-}
-
- 
-.mobile{
+	
+	//-------------------search style---------------//
+	
+	
 	.col-half{
 		width: 50%;
 	}
 	
 	.search-n-menu-icon{
-
-		margin-left: 10px;
 		
 		#mobile-search, .icons{
 			float:left;
@@ -131,6 +137,7 @@ $child-color: #000;
 		#mobile-search{
 			display: none;
 			margin-bottom: 20px;
+			width: 100%;
 
 			.form-control{
 				padding: 5px 10px;
@@ -142,11 +149,10 @@ $child-color: #000;
 		}
     
 		.icons{  
-			margin-left: 10px;
 			color: $white;
 			margin-top: 10px;
 			@include media(xs){
-				padding-left: 40px;
+				padding-left: 80px;
 			}
 			.bars{
 				display: none;
@@ -157,6 +163,13 @@ $child-color: #000;
 			}
 		}
 	}
+	}
+
+}
+
+ 
+.mobile{
+	
 }
 
 
