@@ -212,49 +212,47 @@ ul li {
   .desktop {
     display: none; } }
 @media (max-width: 767px) {
-  .right-menu {
-    display: none; }
-
   .nav .container {
     padding: 0; }
   .nav .nav-menu {
     width: 100%; }
 
-  ul {
-    list-style: none;
-    padding: 0; }
-    ul li a {
-      display: block;
-      text-decoration: none;
+  .right-menu {
+    display: none; }
+    .right-menu .mobile-menu > li:first-child a {
+      border-top: 1px solid #0D47A1; }
+    .right-menu ul {
+      list-style: none;
+      padding: 0; }
+      .right-menu ul li a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        padding: 15px;
+        font-weight: 300; }
+    .right-menu li ul li a {
+      font-size: 13px;
+      background-color: #1b24a7; }
+    .right-menu li a {
+      border-bottom: solid 1px #0D47A1;
+      letter-spacing: 1px;
+      padding: 10px 10px;
+      font-weight: 600;
       color: #fff;
-      font-size: 16px;
-      padding: 15px;
-      font-weight: 300; }
-
-  li ul li a {
-    font-size: 13px;
-    background-color: #1b24a7; }
-
-  li a {
-    border-bottom: solid 1px #0D47A1;
-    letter-spacing: 1px;
-    padding: 10px 10px;
-    font-weight: 600;
-    color: #fff;
-    font-size: 18px; }
-
-  ul.mobile-menu li.has-sub > a {
-    position: relative; }
-    ul.mobile-menu li.has-sub > a.up:after {
-      content: "\f106"; }
-    ul.mobile-menu li.has-sub > a:after {
-      content: "\f107";
-      font: normal normal normal 14px/1 FontAwesome;
-      position: absolute;
-      right: 10px;
-      top: 15px; }
-  ul.mobile-menu ul {
-    display: none; } }
+      font-size: 18px; }
+    .right-menu ul.mobile-menu li.has-sub > a {
+      position: relative; }
+      .right-menu ul.mobile-menu li.has-sub > a.up:after {
+        content: "\f106"; }
+      .right-menu ul.mobile-menu li.has-sub > a:after {
+        content: "\f107";
+        font: normal normal normal 14px/1 FontAwesome;
+        position: absolute;
+        right: 10px;
+        top: 15px; }
+    .right-menu ul.mobile-menu ul {
+      display: none; } }
 .mobile .col-half {
   width: 50%; }
 .mobile .search-n-menu-icon {
@@ -262,7 +260,8 @@ ul li {
   .mobile .search-n-menu-icon #mobile-search, .mobile .search-n-menu-icon .icons {
     float: left; }
   .mobile .search-n-menu-icon #mobile-search {
-    display: none; }
+    display: none;
+    margin-bottom: 20px; }
     .mobile .search-n-menu-icon #mobile-search .form-control {
       padding: 5px 10px; }
   .mobile .search-n-menu-icon .icons {
