@@ -88,6 +88,10 @@
                 @include media(sm){
                 margin-right: 10px;
                 }
+                @include media(xs){
+                    margin-right: 5px;
+                    }
+
             }
         }
 
