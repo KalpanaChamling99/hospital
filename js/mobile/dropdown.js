@@ -14,6 +14,7 @@
             };
     
             this.listingMenu = function(){
+                // $('.bars')
                 
                 $(this.selector+'.has-sub').click( function(e){
                     e.stopPropagation();
