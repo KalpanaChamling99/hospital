@@ -233,7 +233,7 @@ ul li {
     background-color: #1b24a7; }
 
   li a {
-    border-bottom: solid 1px #fff;
+    border-bottom: solid 1px #0D47A1;
     letter-spacing: 1px;
     padding: 10px 10px;
     font-weight: 600;
@@ -248,7 +248,8 @@ ul li {
       content: "\f107";
       font: normal normal normal 14px/1 FontAwesome;
       position: absolute;
-      right: 10px; }
+      right: 10px;
+      top: 15px; }
   ul.mobile-menu ul {
     display: none; } }
 .mobile .col-half {
@@ -316,6 +317,10 @@ ul li {
   padding: 20px 0;
   border-radius: 30px;
   box-shadow: 0 0 10px #8f8282; }
+  @media (max-width: 991px) {
+    .btn-shadow {
+      width: 180px;
+      padding: 15px 0; } }
   @media (max-width: 767px) {
     .btn-shadow {
       width: 140px;
@@ -398,6 +403,7 @@ textarea {
   font-size: 17px;
   font-weight: 600;
   color: #2687ff;
+  border-style: none;
   border-radius: 15px; }
   @media (max-width: 991px) {
     .button {
@@ -587,6 +593,9 @@ footer {
       .about-us .image {
         margin-top: 200px;
         margin-left: 20px; } }
+    @media (max-width: 991px) {
+      .about-us .image {
+        margin-top: 50px; } }
     .about-us .image .img-responsive {
       margin-top: 250px; }
       @media (max-width: 1199px) {

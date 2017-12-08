@@ -84,6 +84,13 @@
             margin-left: 20px;
         
         }
+
+        @include media(sm){
+           
+            margin-top: 50px;
+        
+        }
+        
         
             
         .img-responsive{
