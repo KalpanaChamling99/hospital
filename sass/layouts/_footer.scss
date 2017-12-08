@@ -13,6 +13,7 @@
 footer{
     @extend %text;
     background-color: #202020;    
+    
     a{
         text-decoration: none;
         @extend %text;
@@ -21,9 +22,9 @@ footer{
 
     .clearfix{
         display: none;
-        @include media(md){
-            display: block;
-        }
+        // @include media(md){
+        //     display: block;
+        // }
     }  
     .col-half{
         @include media(sm){
@@ -39,6 +40,11 @@ footer{
     }
     
     .footer{
+        .col-3{
+            @include media(md){
+                width: 33.33%;
+            }
+        }
         
         .title{
             font-size: 30px;
