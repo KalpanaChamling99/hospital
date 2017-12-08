@@ -853,9 +853,6 @@ footer {
 .latest-posts {
   margin: 80px 0 105px 0;
   background-color: #f9f5f5; }
-  @media (max-width: 767px) {
-    .latest-posts .container {
-      padding: 0; } }
   @media (max-width: 991px) {
     .latest-posts .col-3 {
       width: 100%; } }
