@@ -44,6 +44,9 @@ footer{
             @include media(md){
                 width: 33.33%;
             }
+            @include media(xs){
+                width: 100%;
+            }
         }
         
         .title{
