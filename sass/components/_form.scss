@@ -13,7 +13,7 @@
     }
    
     @include media(sm){
-        font-size: 16px;
+        font-size: 18px;
         padding: 10px 10px;
      }
 }
@@ -25,6 +25,10 @@
 textarea{
     @extend %input;
     height: 225px;
+
+    @include media(xs){
+        height: 200px;
+    }
 }
 
 .button{

@@ -399,11 +399,14 @@ ul li {
       padding: 10px 15px; } }
   @media (max-width: 991px) {
     .form-control, textarea {
-      font-size: 16px;
+      font-size: 18px;
       padding: 10px 10px; } }
 
 textarea {
   height: 225px; }
+  @media (max-width: 767px) {
+    textarea {
+      height: 200px; } }
 
 .button {
   width: 195px;
@@ -897,7 +900,7 @@ footer {
   color: #fff; }
   @media (max-width: 767px) {
     .contact-us {
-      margin: 50px 0 0 0; } }
+      margin-bottom: 20px; } }
   @media (max-width: 767px) {
     .contact-us .container {
       padding: 0; } }
