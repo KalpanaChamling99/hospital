@@ -402,6 +402,9 @@ ul li {
       font-size: 18px;
       padding: 10px 10px; } }
 
+::placeholder {
+  color: #fff; }
+
 textarea {
   height: 225px; }
   @media (max-width: 767px) {

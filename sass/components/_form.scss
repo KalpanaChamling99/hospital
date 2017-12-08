@@ -22,9 +22,14 @@
     @extend %input;
    
 }
+::placeholder{
+    color: $white;
+}
 textarea{
     @extend %input;
     height: 225px;
+
+    
 
     @include media(xs){
         height: 200px;
