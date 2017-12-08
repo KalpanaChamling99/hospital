@@ -404,6 +404,8 @@ textarea {
   font-weight: 600;
   color: #2687ff;
   border-style: none;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
   border-radius: 15px; }
   @media (max-width: 991px) {
     .button {

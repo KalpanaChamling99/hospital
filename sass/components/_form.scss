@@ -30,8 +30,10 @@ textarea{
     color: #2687ff;
     border-style: none;
 
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
     border-radius: 15px;
-
+    
       @include media(sm){
              width: 150px;
              padding: 10px  5px;
