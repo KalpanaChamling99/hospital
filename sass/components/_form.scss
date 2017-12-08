@@ -33,7 +33,7 @@ textarea{
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     border-radius: 15px;
-    background-color: red;
+    background-color: $white;
     
       @include media(sm){
              width: 150px;
